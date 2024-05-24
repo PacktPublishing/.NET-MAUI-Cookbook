@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c1_ScrollableLayout.MainPage">
+    <!--Step 1-->
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button Text="Tall Button 1" HeightRequest="500"/>
+            <Button Text="Tall Button 2" HeightRequest="500"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+    <!--Step 2-->
+    <!--<ScrollView Orientation="Horizontal">
+        <HorizontalStackLayout>
+            <Button Text="Tall Button 1" WidthRequest="500"/>
+            <Button Text="Tall Button 2" WidthRequest="500"/>
+        </HorizontalStackLayout>
+    </ScrollView>-->
+</ContentPage>

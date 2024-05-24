@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c1_BindableLayout"
+             x:Class="c1_BindableLayout.MainPage">
+    <ContentPage.BindingContext>
+        <local:MyViewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout BindableLayout.ItemsSource="{Binding DynamicActions}" Spacing="5">
+        <BindableLayout.ItemTemplate>
+            <DataTemplate x:DataType="{x:Type local:ActionInfo}">
+                <Button Text="{Binding Caption}"/>
+            </DataTemplate>
+        </BindableLayout.ItemTemplate>
+        <BindableLayout.EmptyViewTemplate>
+            <DataTemplate>
+                <Label Text="There are no actions"/>
+            </DataTemplate>
+        </BindableLayout.EmptyViewTemplate>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A67E73-E159-4D72-8542-54A2E2D5265C}|c1-BindableLayout\\c1-BindableLayout.csproj|c:\\cookbook\\.net-maui-cookbook\\chapter01\\c1-bindablelayout\\c1-bindablelayout\\myviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A67E73-E159-4D72-8542-54A2E2D5265C}|c1-BindableLayout\\c1-BindableLayout.csproj|solutionrelative:c1-bindablelayout\\myviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A67E73-E159-4D72-8542-54A2E2D5265C}|c1-BindableLayout\\c1-BindableLayout.csproj|c:\\cookbook\\.net-maui-cookbook\\chapter01\\c1-bindablelayout\\c1-bindablelayout\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A67E73-E159-4D72-8542-54A2E2D5265C}|c1-BindableLayout\\c1-BindableLayout.csproj|solutionrelative:c1-bindablelayout\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A67E73-E159-4D72-8542-54A2E2D5265C}|c1-BindableLayout\\c1-BindableLayout.csproj|c:\\cookbook\\.net-maui-cookbook\\chapter01\\c1-bindablelayout\\c1-bindablelayout\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C5A67E73-E159-4D72-8542-54A2E2D5265C}|c1-BindableLayout\\c1-BindableLayout.csproj|solutionrelative:c1-bindablelayout\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9b96d899-3214-4b6f-a8b9-182d4bc2f76f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{34c7837f-3b3a-449c-bdf0-bdad86cbaf4a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d3b09462-361e-4675-acc6-e0732f84d521}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\c1-BindableLayout\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "c1-BindableLayout\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\c1-BindableLayout\\MainPage.xaml.cs",
+              "RelativeToolTip": "c1-BindableLayout\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T18:25:17.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyViewModel.cs",
+              "DocumentMoniker": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\c1-BindableLayout\\MyViewModel.cs",
+              "RelativeDocumentMoniker": "c1-BindableLayout\\MyViewModel.cs",
+              "ToolTip": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\c1-BindableLayout\\MyViewModel.cs",
+              "RelativeToolTip": "c1-BindableLayout\\MyViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:32:49.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\c1-BindableLayout\\MainPage.xaml",
+              "RelativeDocumentMoniker": "c1-BindableLayout\\MainPage.xaml",
+              "ToolTip": "C:\\Cookbook\\.NET-MAUI-Cookbook\\Chapter01\\c1-BindableLayout\\c1-BindableLayout\\MainPage.xaml",
+              "RelativeToolTip": "c1-BindableLayout\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T09:32:20.648Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d562c6a0-d2fe-4c19-a8b3-e5cbc09bf375}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c1_GridLayouts.MainPage">
+    <!--Step 1-->
+    <Grid RowDefinitions="40,80" 
+        ColumnDefinitions="Auto, *">
+        <Label Text="Title" 
+               BackgroundColor="LightGreen"/>
+        <Label Text="Description" 
+               Grid.Row="1"
+               BackgroundColor="LightGreen"/>
+        <Editor BackgroundColor="AliceBlue"
+                Grid.Column="1"/>
+        <Editor BackgroundColor="AliceBlue"
+                Grid.Row="1" 
+                Grid.Column="1"/>
+    </Grid>
+
+    <!--Step 2-->
+    <!--<Grid RowDefinitions="40,40" 
+        ColumnDefinitions="*, 60">
+        <Label Text="Headline"/>
+        <Label Text="Supporting text" 
+            TextColor="Gray"
+            Grid.Row="1" />
+        <Label Text="100+"
+            BackgroundColor="LightGreen"   
+            VerticalOptions="Center" 
+            HorizontalOptions="End"
+            Grid.RowSpan="2" 
+            Grid.Column="1" />
+    </Grid>-->
+</ContentPage>
