@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c2_ViewModelCommunication.Views.SecurityMonitorView"
+             xmlns:vm="clr-namespace:c2_ViewModelCommunication.ViewModels"
+             x:DataType="{x:Type vm:SecurityMonitorViewModel}">
+    <ContentView.BindingContext>
+        <vm:SecurityMonitorViewModel/>
+    </ContentView.BindingContext>
+    <VerticalStackLayout>
+        <Label Text="Security" FontSize="30"/>
+        <CollectionView ItemsSource="{Binding SecurityAlerts}"/>
+    </VerticalStackLayout>
+</ContentView>
