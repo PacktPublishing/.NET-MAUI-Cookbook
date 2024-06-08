@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c2-DecoupleViewAndViewModel", "c2-DecoupleViewAndViewModel\c2-DecoupleViewAndViewModel.csproj", "{E648F29F-54CA-4016-A86B-849EEC74F229}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E648F29F-54CA-4016-A86B-849EEC74F229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E648F29F-54CA-4016-A86B-849EEC74F229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E648F29F-54CA-4016-A86B-849EEC74F229}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E648F29F-54CA-4016-A86B-849EEC74F229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E648F29F-54CA-4016-A86B-849EEC74F229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E648F29F-54CA-4016-A86B-849EEC74F229}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {074EBD6E-FBE5-4EFF-A41D-B8C844EB6385}
+	EndGlobalSection
+EndGlobal

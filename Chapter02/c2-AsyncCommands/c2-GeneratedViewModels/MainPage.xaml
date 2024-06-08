@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:c2_DecoupleViewAndViewModel"
+             x:Class="c2_DecoupleViewAndViewModel.MainPage"
+             x:DataType="{x:Type viewModel:MainViewModel}">
+    <ContentPage.BindingContext>
+        <viewModel:MainViewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10">
+        <Button Text="Go!" Command="{Binding UpdateTextCommand}"/>
+        <Button Text="Cancel" Command="{Binding UpdateTextCancelCommand}"/>
+        <ActivityIndicator IsRunning="{Binding UpdateTextCommand.IsRunning}"/>
+    </VerticalStackLayout>
+</ContentPage>

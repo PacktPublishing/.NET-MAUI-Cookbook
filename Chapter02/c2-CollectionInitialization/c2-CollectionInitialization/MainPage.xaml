@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:c2_DecoupleViewAndViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c2_DecoupleViewAndViewModel.MainPage"
+             x:DataType="{x:Type viewModel:MyViewModel}">
+    <ContentPage.BindingContext>
+        <viewModel:MyViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Loaded"
+            Command="{Binding InitializeCommand}"/>
+    </ContentPage.Behaviors>
+    <Grid>
+        <CollectionView ItemsSource="{Binding Customers}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type viewModel:Customer}">
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="{Binding ID}"/>
+                        <Label Text="{Binding Name}"/>
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ActivityIndicator IsRunning="{Binding InitializeCommand.IsRunning}" 
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+    </Grid>
+</ContentPage>
