@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c3-ReusableContentView", "c3-ReusableContentView\c3-ReusableContentView.csproj", "{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4FDAFC-6286-4089-BBC3-B6A5319735FE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26A7C79C-2675-48F7-8628-191C86BFF8F9}
+	EndGlobalSection
+EndGlobal

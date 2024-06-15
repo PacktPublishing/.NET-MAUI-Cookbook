@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c3_ReusableContentView"
+             x:Class="c3_ReusableContentView.MainPage">
+    <VerticalStackLayout Spacing="52" Padding="14">
+        <local:EditableCard HorizontalOptions="Fill" 
+                        HeightRequest="100" 
+                        Text="Hello, readers!"/>
+        <local:EditableCard HorizontalOptions="Fill" 
+                        HeightRequest="100" 
+                        Text="Press Edit to start editing"/>
+    </VerticalStackLayout>
+
+</ContentPage>
