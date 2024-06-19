@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:c3_DarkAndLightThemes"
+             x:Class="c3_DarkAndLightThemes.MainPage">
+    <VerticalStackLayout Spacing="10">
+        <GraphicsView HeightRequest="20">
+            <GraphicsView.Drawable>
+                <local:BarChartDrawable Value="0.3" />
+            </GraphicsView.Drawable>
+        </GraphicsView>
+        <GraphicsView HeightRequest="20">
+            <GraphicsView.Drawable>
+                <local:BarChartDrawable Value="0.8" />
+            </GraphicsView.Drawable>
+        </GraphicsView>
+        
+        <!--"There more..." section:-->
+        <!--<local:SegmentedBarChartView 
+            Value="{Binding Source={x:Reference slider}, Path=Value}"/>
+        <Slider Minimum="0" 
+                Maximum="1" 
+                Value="0.2"
+                x:Name="slider"/>-->
+    </VerticalStackLayout>
+</ContentPage>
