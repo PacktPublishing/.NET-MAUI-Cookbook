@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c4_LocalDatabaseConnection.Views.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding LoadCustomersCommand}"/>
+    </ContentPage.Behaviors>
+    <Grid>
+        <RefreshView IsRefreshing="{Binding LoadCustomersCommand.IsRunning}"
+                     Command="{Binding LoadCustomersCommand}">
+            <CollectionView ItemsSource="{Binding Customers}" 
+                            x:Name="collectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Type vm:Customer}">
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete" 
+                                           BackgroundColor="IndianRed"/>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <HorizontalStackLayout Spacing="10" 
+                                        Padding="10">
+                                <Label Text="{Binding Id}"/>
+                                <Label Text="{Binding Name}"/>
+                            </HorizontalStackLayout>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        <Button Text="+"
+                WidthRequest="56"
+                HeightRequest="56"
+                FontSize="24"
+                HorizontalOptions="End" 
+                VerticalOptions="End"
+                Margin="16"
+                />
+        <!--<ActivityIndicator VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        IsRunning="{Binding LoadCustomersCommand.IsRunning}"/>-->
+    </Grid>
+</ContentPage>
