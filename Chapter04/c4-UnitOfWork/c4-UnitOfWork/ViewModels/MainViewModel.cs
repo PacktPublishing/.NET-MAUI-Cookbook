@@ -1,15 +1,14 @@
 ﻿using c4_LocalDatabaseConnection.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace c4_LocalDatabaseConnection.ViewModels {
     public partial class MainViewModel : ObservableObject {
@@ -17,62 +16,69 @@ namespace c4_LocalDatabaseConnection.ViewModels {
         ObservableCollection<Customer> customers;
 
         [ObservableProperty]
-        [NotifyCanExecuteChangedFor(nameof(LoadCustomersCommand))]
-        bool isDataLoaded;
+        bool refreshing;
 
-        [RelayCommand(CanExecute = nameof(CanLoadCustomers))]
+        bool IsInitialized;
+
+        [RelayCommand]
+        void Showing() {
+            Refreshing = !IsInitialized;
+            IsInitialized = true;
+        }
+
+        [RelayCommand]
         async Task LoadCustomersAsync() {
-            await Task.Run(async () =>
-            {
-                using CrmContext context = new CrmContext();
-                if (!context.Customers.Any()) {
-                    await PopulateCustomers(context);
-                };
-                Customers = new ObservableCollection<Customer>(await context.Customers.ToListAsync());
-            });
-            IsDataLoaded = true;
-
-            //cache 
-            //https://chatgpt.com/share/77063290-aa22-4735-bfef-600a214b1e0e
+            using var uniOfWork = new CrmUnitOfWork();
+            Customers = new ObservableCollection<Customer>(await uniOfWork.Items.GetAllAsync());
+            Refreshing = false;
         }
-        async Task PopulateCustomers(CrmContext context) {
-            for (int i = 1; i < 10; i++) {
-                context.Customers.Add(new Customer() {
-                    Id = i,
-                    Name = $"Customer {i}"
+
+        [RelayCommand]
+        async Task ShowNewFormAsync() {
+            await Shell.Current.GoToAsync(nameof(CustomerEditPage),
+                parameters: new Dictionary<string, object>
+                {
+                        { "ParentRefreshAction", (Func<Customer, Task>)RefreshAddedAsync },
+                        { "Item", new Customer() },
+                        { "IsNewItem", true }
                 });
-            }
-            await context.SaveChangesAsync();
         }
-        bool CanLoadCustomers() => !IsDataLoaded;
-        async Task GoToNewCustomerFormAsync() {
-            CustomerEditFormViewModel newCustomerVm = new CustomerEditFormViewModel();
-            await Shell.Current.GoToAsync(nameof(CustomerEditForm));
+
+        Task RefreshAddedAsync(Customer addedCustomer) {
+            Customers.Add(addedCustomer);
+            return Task.CompletedTask;
+        }
+        [RelayCommand]
+        async Task DeleteCustomerAsync(Customer customer) {
+            using var uniOfWork = new CrmUnitOfWork();
+            await uniOfWork.Items.DeleteAsync(customer);
+            await uniOfWork.SaveAsync();
+            Customers.Remove(customer);
+        }
+
+
+        [RelayCommand]
+        async Task ShowDetailFormAsync(Customer customer) {
+            await Shell.Current.GoToAsync(nameof(CustomerDetailPage),
+                    parameters: new Dictionary<string, object>
+                    {
+                        { "ParentRefreshAction", (Func<Customer, Task>)RefreshEditedAsync },
+                        { "Item", customer }
+                    });
+        }
+
+        async Task RefreshEditedAsync(Customer updatedCustomer) {
+            int editedItemIndex = -1;
+            await Task.Run(() =>
+            {
+                editedItemIndex = Customers.Select((customer, index) => new { customer, index }).
+                                            First(item => item.customer.Id == updatedCustomer.Id).index;
+            });
+            if (editedItemIndex == -1)
+                return;
+            Customers[editedItemIndex] = updatedCustomer;
         }
     }
 
-    public class CrmContext : DbContext {
-        public DbSet<Customer> Customers { get; set; }
-        public CrmContext() {
-            SQLitePCL.Batteries_V2.Init();
-            Database.EnsureCreated();
-        }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "crm.db");
-            optionsBuilder.UseSqlite($"Filename={dbPath}");
-            base.OnConfiguring(optionsBuilder);
-        }
-    }
 
-    public class Customer {
-        public int Id {
-            get;
-            set;
-        }
-
-        public string Name {
-            get;
-            set;
-        }
-    }
 }
