@@ -68,16 +68,12 @@ namespace c4_LocalDatabaseConnection.ViewModels {
         [RelayCommand(CanExecute = nameof(CanSave))]
         async Task SaveAsync() {
             using var uof = new CrmUnitOfWork();
-            if (IsNewItem)
-                await uof.Items.AddAsync(Item);
-            else
-                await uof.Items.UpdateAsync(Item);
             try {
+                if (IsNewItem)
+                    await uof.Items.AddAsync(Item);
+                else
+                    await uof.Items.UpdateAsync(Item);
                 await uof.SaveAsync();
-            }
-            catch (DbUpdateException ex) when (ex.InnerException is SqliteException sqliteEx) {
-                await Shell.Current.DisplayAlert("Error", sqliteEx.Message, "OK");
-                return;
             }
             catch (Exception ex) {
                 await Shell.Current.DisplayAlert("Error", ex.Message, "OK");

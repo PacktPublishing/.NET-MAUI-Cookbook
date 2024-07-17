@@ -31,10 +31,6 @@ namespace c4_LocalDatabaseConnection.ViewModels {
                     await uof.Items.UpdateAsync(Item);
                 await uof.SaveAsync();
             }
-            catch (DbUpdateException ex) when (ex.InnerException is SqliteException sqliteEx) {
-                await Shell.Current.DisplayAlert("Error", sqliteEx.Message, "OK");
-                return;
-            }
             catch (Exception ex) {
                 await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
                 return;

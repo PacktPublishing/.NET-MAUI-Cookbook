@@ -53,8 +53,8 @@ namespace c4_LocalDatabaseConnection.ViewModels {
         [RelayCommand]
         async Task DeleteCustomerAsync(Customer customer) {
             using var uniOfWork = new CrmUnitOfWork();
-            await uniOfWork.Items.DeleteAsync(customer);
             try {
+                await uniOfWork.Items.DeleteAsync(customer);
                 await uniOfWork.SaveAsync();
             }
             catch (DbUpdateException ex) when (ex.InnerException is SqliteException sqliteEx) {
@@ -86,8 +86,7 @@ namespace c4_LocalDatabaseConnection.ViewModels {
             });
             if (editedItemIndex == -1)
                 return;
-            Customers.RemoveAt(editedItemIndex);
-            Customers.Insert(editedItemIndex, updatedCustomer);
+            Customers[editedItemIndex] = updatedCustomer;
         }
     }
 }
