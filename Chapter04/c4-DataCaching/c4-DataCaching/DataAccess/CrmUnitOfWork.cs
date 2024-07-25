@@ -19,10 +19,10 @@ namespace c4_LocalDatabaseConnection {
                     Context.SaveChanges();
                 }
                 catch {
-                    CacheService.ClearCacheUpdateActins();
+                    CacheService.ClearCacheUpdateActions();
                     throw;
                 }
-                CacheService.ExecuteCacheUpdateActins();
+                CacheService.ExecuteCacheUpdateActions();
             });
         }
 

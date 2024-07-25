@@ -15,7 +15,7 @@ namespace c4_LocalDatabaseConnection {
             customerRepository ??= new CustomersCachedReporitory(new CustomerWebRepository(), CacheService);
 
         public async Task SaveAsync() {
-            CacheService.ExecuteCacheUpdateActins();
+            CacheService.ExecuteCacheUpdateActions();
             await Task.CompletedTask;
         }
 

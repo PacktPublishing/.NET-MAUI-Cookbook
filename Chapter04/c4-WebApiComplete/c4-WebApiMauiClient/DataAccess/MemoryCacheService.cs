@@ -12,8 +12,8 @@ namespace c4_LocalDatabaseConnection {
         TItem Set<TItem>(object key, TItem value);
         void ClearCollectionCache(string collectionKey);
         void AddPendingAction(CollectionCacheUpdate pendingAction);
-        void ExecuteCacheUpdateActins();
-        void ClearCacheUpdateActins();
+        void ExecuteCacheUpdateActions();
+        void ClearCacheUpdateActions();
     }
 
     public class MemoryCacheService : ICacheService {
@@ -33,14 +33,14 @@ namespace c4_LocalDatabaseConnection {
         public void AddPendingAction(CollectionCacheUpdate pendingAction) {
             PendingCacheUpdateActions.Add(pendingAction);
         }
-        public void ExecuteCacheUpdateActins() {
+        public void ExecuteCacheUpdateActions() {
             foreach (var ca in PendingCacheUpdateActions) {
                 if (Cache.TryGetValue(ca.CollectionKey, out var cachedCollection))
                     ca.UpdateAction((IList)cachedCollection);
             }
             PendingCacheUpdateActions.Clear();
         }
-        public void ClearCacheUpdateActins() {
+        public void ClearCacheUpdateActions() {
             PendingCacheUpdateActions.Clear();
         }
     }
