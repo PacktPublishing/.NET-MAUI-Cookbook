@@ -11,7 +11,7 @@ namespace c4_LocalDatabaseConnection {
         readonly ICacheService CacheService = MemoryCacheService.Instance;
         IRepository<Customer> customerRepository;
         public IRepository<Customer> Items =>
-            customerRepository ??= new CustomersCachedReporitory(new CustomerRepository(Context), CacheService);
+            customerRepository ??= new CustomersCachedRepository(new CustomerRepository(Context), CacheService);
         public async Task SaveAsync() {
             await Task.Run(() =>
             {

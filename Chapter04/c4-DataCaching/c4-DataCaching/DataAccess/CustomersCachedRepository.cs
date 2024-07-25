@@ -2,7 +2,7 @@
 
 namespace c4_LocalDatabaseConnection {
 
-    public class CustomersCachedReporitory(IRepository<Customer> innerRepository, ICacheService cacheService) : IRepository<Customer> {
+    public class CustomersCachedRepository(IRepository<Customer> innerRepository, ICacheService cacheService) : IRepository<Customer> {
         protected readonly IRepository<Customer> InnerRepository = innerRepository;
         protected readonly ICacheService CacheService = cacheService;
         protected readonly string CollectionName = "customers";
