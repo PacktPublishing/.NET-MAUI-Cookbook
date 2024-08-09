@@ -13,7 +13,7 @@ namespace c5_AuthenticationClient
 {
     public class WebService
     {
-        static string baseAddress = "https://zz4kwzzx-7158.asse.devtunnels.ms/";
+        static string baseAddress = "https://YOUR.DEV.TUNNEL.ADDRESS/";
         HttpClient httpClient = new HttpClient() { BaseAddress = new Uri(baseAddress) };
         public static WebService Instance { get; } = new();
 
