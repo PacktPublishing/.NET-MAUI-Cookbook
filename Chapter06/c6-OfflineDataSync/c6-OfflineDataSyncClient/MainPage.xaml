@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:c6_OfflineDataSyncClient"
+             xmlns:model="clr-namespace:c6_OfflineDataSyncClient.Model"
+             x:Class="c6_OfflineDataSyncClient.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <DataTemplate x:Key="todoTemplate"
+                      x:DataType="model:TodoItem">
+            <Label Text="{Binding Title}" 
+                   Margin="10">
+                <Label.Triggers>
+                    <DataTrigger Binding="{Binding InSync}" 
+                                     Value="False"
+                                     TargetType="Label">
+                        <Setter Property="TextColor" Value="CadetBlue"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+        </DataTemplate>
+    </ContentPage.Resources>
+    <!--<ContentPage.Behaviors>
+        <tk:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding InitializeCommand}"/>
+    </ContentPage.Behaviors>-->
+    <Grid RowDefinitions="Auto, *,50"
+          ColumnDefinitions="*,50"
+          Padding="10">
+        <Label Text="Out of sync"
+               IsVisible="{Binding OutOfSync}"
+               FontSize="24"
+               TextColor="CadetBlue"/>
+        <RefreshView Grid.Row="1"
+                     Command="{Binding RefreshCommand}"
+                     IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView ItemsSource="{Binding Items}" 
+                        ItemTemplate="{StaticResource todoTemplate}"
+                        Grid.Row="1"/>
+        </RefreshView>
+        <Entry x:Name="newTodoEntry"
+               Text="{Binding NewItemText}"
+               Grid.Row="2"/>
+        <Button Text="+"
+                Command="{Binding AddTodoItemCommand}"
+                Clicked="Button_Clicked"
+                Grid.Row="2"
+                Grid.Column="1"/>
+    </Grid>
+
+</ContentPage>
