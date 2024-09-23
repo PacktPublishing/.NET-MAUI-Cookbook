@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "c6-OfflineDataSync": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53791;http://localhost:53792"
+    }
+  }
+}
