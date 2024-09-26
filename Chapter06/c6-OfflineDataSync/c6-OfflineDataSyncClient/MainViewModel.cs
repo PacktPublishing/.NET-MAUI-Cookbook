@@ -16,10 +16,10 @@ namespace c6_OfflineDataSyncClient
     public partial class MainViewModel : ObservableObject
     {
         [ObservableProperty]
-        ConcurrentObservableCollection<TodoItem> items = [];
+        ConcurrentObservableCollection<Blog> items = [];
 
         [ObservableProperty]
-        [NotifyCanExecuteChangedFor(nameof(AddTodoItemCommand))]
+        [NotifyCanExecuteChangedFor(nameof(AddBlogCommand))]
         string newItemText = string.Empty;
 
         [ObservableProperty]
@@ -34,61 +34,64 @@ namespace c6_OfflineDataSyncClient
             IsRefreshing = true;
             using var context = new LocalAppDbContext();
             SetNonSyncedItems(context);
-            Items = new ConcurrentObservableCollection<TodoItem>(context.TodoItems);
+            Items = new ConcurrentObservableCollection<Blog>(context.Blogs);
             try
             {
                 await context.SynchronizeAsync();
-                Items = new ConcurrentObservableCollection<TodoItem>(context.TodoItems);
+                Items = new ConcurrentObservableCollection<Blog>(context.Blogs);
                 OutOfSync = false;
             }
             catch
             {
                 OutOfSync = true;
             }
-            IsRefreshing = false;
+            finally
+            {
+                IsRefreshing = false;
+            }
         }
         void SetNonSyncedItems(LocalAppDbContext context)
         {
-            var queuedTodos = context.DatasyncOperationsQueue.Where(x => x.EntityType == typeof(TodoItem).FullName);
-            foreach (var todoItem in queuedTodos)
+            var queuedBlogs = context.DatasyncOperationsQueue.Where(x => x.EntityType == typeof(Blog).FullName);
+            foreach (var blog in queuedBlogs)
             {
-                var item = context.TodoItems.Find(todoItem.ItemId);
+                var item = context.Blogs.Find(blog.ItemId);
                 item.InSync = false;
             }
         }
 
-        [RelayCommand(CanExecute = nameof(CanAddTodoItem))]
-        void AddTodoItem()
+        [RelayCommand(CanExecute = nameof(CanAddBlog))]
+        void AddBlog()
         {
-            var newTodo = new TodoItem()
+            var newBlog = new Blog()
             {
                 Title = NewItemText,
                 InSync = false,
             };
-            Items.Add(newTodo);
+            Items.Add(newBlog);
             NewItemText = string.Empty;
-            SaveChangedItem(newTodo);
+            SaveChangedItem(newBlog);
         }
-        bool CanAddTodoItem() =>
+        bool CanAddBlog() =>
             !string.IsNullOrEmpty(NewItemText);
-        void SaveChangedItem(TodoItem newTodo)
+        void SaveChangedItem(Blog newBlog)
         {
             Task.Run(async () =>
             {
                 using var context = new LocalAppDbContext();
-                context.TodoItems.Add(newTodo);
+                context.Blogs.Add(newBlog);
                 context.SaveChanges();
                 PushResult pushResult = await context.PushAsync();
                 if (pushResult.IsSuccessful)
                 {
-                    UpdateCollectionItem(newTodo.Id);
+                    UpdateCollectionItem(newBlog.Id);
                 }
             });
         }
         void UpdateCollectionItem(string itemId)
         {
             using var context = new LocalAppDbContext();
-            var freshItem = context.TodoItems.Find(itemId);
+            var freshItem = context.Blogs.Find(itemId);
             Shell.Current.Dispatcher.Dispatch(() =>
             {
                 Items.ReplaceIf(item => item.Id == itemId, freshItem);

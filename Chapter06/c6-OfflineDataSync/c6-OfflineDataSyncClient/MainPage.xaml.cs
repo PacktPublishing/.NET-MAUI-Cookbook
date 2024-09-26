@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Maui.Core.Platform;
+﻿
+using CommunityToolkit.Maui.Core.Platform;
 
 namespace c6_OfflineDataSyncClient
 {
@@ -9,9 +10,9 @@ namespace c6_OfflineDataSyncClient
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void OnAddClicked(object sender, EventArgs e)
         {
-            newTodoEntry.HideKeyboardAsync(CancellationToken.None);
+            newBlogEntry.HideKeyboardAsync(CancellationToken.None);
         }
     }
 

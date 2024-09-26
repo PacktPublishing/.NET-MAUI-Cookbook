@@ -12,11 +12,11 @@ namespace c6_OfflineDataSyncClient.Model
 {
     public class LocalAppDbContext : OfflineDbContext
     {
-        public DbSet<TodoItem> TodoItems => Set<TodoItem>();
+        public DbSet<Blog> Blogs => Set<Blog>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "local.db");
+            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "local2.db");
             optionsBuilder.UseSqlite($"Filename={dbPath}");
             base.OnConfiguring(optionsBuilder);
         }
@@ -25,7 +25,7 @@ namespace c6_OfflineDataSyncClient.Model
         {
             HttpClientOptions clientOptions = new()
             {
-                Endpoint = new Uri("https://zz4kwzzx-53791.asse.devtunnels.ms/"),
+                Endpoint = new Uri("https://zz4kwzzx-7084.asse.devtunnels.ms/"),
             };
             _ = optionsBuilder.UseHttpClientOptions(clientOptions);
         }
