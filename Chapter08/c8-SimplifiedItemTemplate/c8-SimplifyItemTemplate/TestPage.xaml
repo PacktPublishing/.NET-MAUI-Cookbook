@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:LoadingTimePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c8_DebugVsRelease"
+             x:Class="c8_DebugVsRelease.TestPage"
+             Title="TestPage">
+    <CollectionView x:Name="collectionView">
+        <CollectionView.ItemTemplate>
+            <!--<DataTemplate>
+                <Grid Padding="10" 
+                      ColumnDefinitions="Auto, *, Auto, *, Auto, *" 
+                      RowDefinitions="Auto,Auto,Auto">
+                    <Label Text="ID: " FontAttributes="Bold"/>
+                    <Label Text="Name: " FontAttributes="Bold" Grid.Row="1"/>
+                    <Label Text="Prop1: " FontAttributes="Bold" Grid.Column="2"/>
+                    <Label Text="Prop2: " FontAttributes="Bold" Grid.Row="1" Grid.Column="2"/>
+                    <Label Text="Prop3: " FontAttributes="Bold" Grid.Column="4"/>
+                    <Label Text="Prop4: " FontAttributes="Bold" Grid.Column="4" Grid.Row="1"/>
+                    <Label Text="{Binding Id}"    Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="{Binding Name}"  Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="{Binding Prop1}" Grid.Row="0" Grid.Column="3"/>
+                    <Label Text="{Binding Prop2}" Grid.Row="1" Grid.Column="3"/>
+                    <Label Text="{Binding Prop3}" Grid.Row="0" Grid.Column="5"/>
+                    <Label Text="{Binding Prop4}" Grid.Row="1" Grid.Column="5"/>
+                    <HorizontalStackLayout Grid.Row="6" 
+                                           Grid.ColumnSpan="6" 
+                                           Spacing="5" 
+                                           HeightRequest="28">
+                        <Button Text="Delete" Padding="5"/>
+                        <Button Text="Share" Padding="5"/>
+                        <Button Text="Duplicate" Padding="5"/>
+                        <Button Text="Move" Padding="5"/>
+                    </HorizontalStackLayout>
+                </Grid>
+            </DataTemplate>-->
+            <DataTemplate>
+                <Grid Padding="10" ColumnDefinitions="*, 50" RowDefinitions="*,*" RowSpacing="8">
+                    <Label Text="{Binding Name}" />
+                    <Label Text="{Binding Prop1}" 
+                           Grid.Row="1"/>
+                    <Button BackgroundColor="Transparent"
+                                Text="&#x22EE;"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                FontSize="18"
+                                Grid.Column="1"
+                                Grid.RowSpan="2"/>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</local:LoadingTimePage>

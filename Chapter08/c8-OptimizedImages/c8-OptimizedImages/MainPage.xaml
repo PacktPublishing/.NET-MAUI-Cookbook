@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c8_DebugVsRelease.MainPage">
+
+    <VerticalStackLayout Spacing="10"
+                        VerticalOptions="Center"
+                        Padding="10">
+        <Button Text="Select Image"
+            Clicked="OnSelectImageClick"/>
+        <Button Text="Open TestPage"
+            Clicked="OnOpenTestPageClicked"/>
+        <Image x:Name="imageControl" 
+            WidthRequest="100"
+            HeightRequest="100"
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+
+</ContentPage>

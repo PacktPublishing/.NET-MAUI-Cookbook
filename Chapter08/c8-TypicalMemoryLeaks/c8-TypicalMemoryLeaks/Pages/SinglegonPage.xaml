@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TypicalMemoryLeaks.Pages.SinglegonPage"
+             Title="SinglegonPage">
+    <Grid>
+        <Label 
+            Text="This page will remain in memory since it's registered as a singleton in the Dependency Injection container. For more details, check the MauiProgram.RegisterViews method"
+            VerticalOptions="Center" 
+            HorizontalTextAlignment="Center" />
+    </Grid>
+</ContentPage>

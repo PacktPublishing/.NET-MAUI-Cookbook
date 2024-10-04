@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CollectionViewStringId.OutlookIntervals">
+    <value>Давно;Прошлый месяц;Раньше этого месяца;Три недели назад;Две недели назад;На прошлой неделе;;;;;;;;Вчера;Сегодня;Завтра;;;;;;;;На следующей неделе;Через две недели;Через три недели;Позднее этого месяца;Следующий месяц;Позднее следующего месяца;</value>
+  </data>
+  <data name="EditorStringId.DataForm_ValidationExceptionMessage" xml:space="preserve">
+    <value>Недопустимое входное значение</value>
+  </data>
+  <data name="EditorStringId.FilteringUIForm_PageTitle">
+    <value>Фильтры</value>
+  </data>
+  <data name="EditorStringId.DateEdit_Picker_CANCEL">
+    <value>Отмена</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_ApplyButtonText">
+    <value>Применить</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_SearchPlaceholderText">
+    <value>Поиск</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_CancelButtonText">
+    <value>Отмена</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_OkButtonText">
+    <value>Ок</value>
+  </data>
+  <data name="EditorStringId.DateEdit_Picker_OK">
+    <value>OK</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_ClearButtonText" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryAverage">
+    <value>Среднее</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryCount">
+    <value>Кол-во</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryCustom">
+    <value>Значение</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryMax">
+    <value>Максимум</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryMin">
+    <value>Минимум</value>
+  </data>
+  <data name="GridStringId.Caption_SummarySum">
+    <value>Сумма</value>
+  </data>
+  <data name="GridStringId.EditorFormPage_EditValues">
+    <value>Изменение значений</value>
+  </data>
+  <data name="GridStringId.EditorFormPage_Save">
+    <value>Сохранить</value>
+  </data>
+  <data name="GridStringId.GridOutlookIntervals">
+    <value>Давно;Прошлый месяц;Раньше этого месяца;Три недели назад;Две недели назад;На прошлой неделе;;;;;;;;Вчера;Сегодня;Завтра;;;;;;;;На следующей неделе;Через две недели;Через три недели;Позднее этого месяца;Следующий месяц;Позднее следующего месяца;</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Day">
+    <value>день</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Days">
+    <value>дни</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hour">
+    <value>час</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hours">
+    <value>часы</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minute">
+    <value>минута</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minutes">
+    <value>минут(ы)</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Week">
+    <value>неделя</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Weeks">
+    <value>недели</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentDetailFormat_Recurrence">
+    <value>Повторять {0}</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentDetailFormat_Status" xml:space="preserve">
+      <value>Статус: {0}</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_AddAnotherReminder">
+    <value>Добавить ещё напоминание</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_AddReminder">
+    <value>Добавить напоминание</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_AllDay">
+    <value>Весь день</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_Label">
+    <value>Метка</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_Repeat">
+    <value>Повторение</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_Status">
+    <value>Статус</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_SubjectPlaceholder">
+    <value>Название встречи</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_AcceptAppointmentRemoveAction">
+    <value>Да</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_CancelAction">
+    <value>Отмена</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_CancelAppointmentRemoveAction">
+    <value>Нет</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditAppointmentTitle">
+    <value>Изменение встречи</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditFutureOccurrencesAction">
+    <value>Изменить эту и последующие встречи</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditOccurrenceAction">
+    <value>Изменить только эту встречу</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditPatternAction">
+    <value>Изменить все встречи в этой последовательности</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_NewAppointmentTitle">
+    <value>Новая встреча</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_ReminderCustomization">
+    <value>Настройка Оповещения</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemoveAppointmentTitle">
+    <value>Удалить встречу?</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemoveFutureOccurrencesAction">
+    <value>Удалить эту и последующие встречи</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemoveOccurrenceAction">
+    <value>Удалить только эту встречу</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemovePatternAction">
+    <value>Удалить все встречи в последовательности</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_SelectAppointmentTypeTitle">
+    <value>Это повторяющаяся встреча.</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Anniversary">
+    <value>Годовщина</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Birthday">
+    <value>День рождения</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Business">
+    <value>Бизнес</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Important">
+    <value>Важно</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_MustAttend">
+    <value>Необходимо присутствовать</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_NeedsPreparation">
+    <value>Требует подготовки</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_None">
+    <value>Нет</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Personal">
+    <value>Личное</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_PhoneCall">
+    <value>Позвонить</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_TravelRequired">
+    <value>Необходим выезд</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Vacation">
+    <value>Отпуск</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_Label">
+    <value>Метка</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_Reminder">
+    <value>Оповещение</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_Status">
+    <value>Статус</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Busy">
+    <value>Занят</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Free">
+    <value>Свободен</value>
+  </data>
+  <data name="SchedulerStringId.Caption_OutOfOffice">
+    <value>Нет на работе</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Tentative">
+    <value>Неопределенно</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysEveryDay">
+    <value>День</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWeekendDays">
+    <value>Выходной</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWorkDays">
+    <value>Будний день</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFirst">
+    <value>1</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFourth">
+    <value>4</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthLast">
+    <value>Последн.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthSecond">
+    <value>2</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthThird">
+    <value>3</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WorkingElsewhere">
+    <value>Работа в другом месте</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_After">
+    <value>После</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_Never">
+    <value>Никогда</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_Occurrences">
+    <value>повторений</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_On">
+    <value/>
+  </data>
+  <data name="SchedulerStringId.DayRadioGroup_DayOrDays">
+    <value>день(дней)</value>
+  </data>
+  <data name="SchedulerStringId.DayRadioGroup_Every">
+    <value>Каждый</value>
+  </data>
+  <data name="SchedulerStringId.DayRadioGroup_EveryWeekDay">
+    <value>Каждый рабочий день</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_DayOrDays">
+    <value>день(дней)</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_Each">
+    <value>Каждый</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_MonthOrMonths">
+    <value>-го месяца</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_OfEvery">
+    <value>каждого</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_The">
+    <value/>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayOfWeekForDailyRecurrence">
+    <value>Только WeekDays.EveryDay, WeekDays.WeekendDays и WeekDays.WorkDays возможны для данного значения.</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_EndRepeat">
+    <value>Окончание повтора</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_Frequency">
+    <value>Периодичность</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_Repeat">
+    <value>Повтор</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_RepeatOn">
+    <value>Повторять</value>
+  </data>
+  <data name="SchedulerStringId.ReminderAddPage_Custom">
+    <value>Другое...</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_AtTimeOfEvent">
+    <value>Время начала события</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Custom">
+    <value>Другой...</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Day">
+    <value>день</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Days">
+    <value>дней</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Hour">
+    <value>час</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Hours">
+    <value>часов</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Minute">
+    <value>минута</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Minutes">
+    <value>минут</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Second">
+    <value>секунда</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Seconds">
+    <value>секунд</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_TimeBefore">
+    <value>{0}</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_TimeBeforeStart">
+    <value>{0} до начала</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeDaily">
+    <value>Ежедневно</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeHourly">
+    <value>Ежечасно</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMinutely">
+    <value>Ежеминутно</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMonthly">
+    <value>Ежемесячно</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeNever">
+    <value>Никогда</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeWeekly">
+    <value>Еженедельно</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeYearly">
+    <value>Ежегодно</value>
+  </data>
+  <data name="SchedulerStringId.TimeZoneSelectPage_SearchBarPlaceholderText">
+    <value>Часовой пояс</value>
+  </data>
+  <data name="SchedulerStringId.WeekRadioGroup_Every">
+    <value>Каждый</value>
+  </data>
+  <data name="SchedulerStringId.WeekRadioGroup_WeekOrWeeks">
+    <value>неделю</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_DayOf">
+    <value>день</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_Every">
+    <value>Каждый</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_OfEvery">
+    <value>каждого</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_The">
+    <value/>
+  </data>
+  <data name="SchedulerStringId.Agenda_EmptyDay" xml:space="preserve">
+    <value>Нет мероприятий</value>
+  </data>
+  <data name="SchedulerStringId.Agenda_AllDay">
+    <value>Весь день</value>
+  </data>
+  <data name="SchedulerStringId.Agenda_Today">
+    <value>Сегодня</value>
+  </data>
+  <data name="EditorStringId.ComboBox_NotFound" xml:space="preserve">
+      <value>Не найдено</value>
+  </data>
+  <data name="EditorStringId.DetailEditFormPage_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="EditorStringId.DetailEditFormPage_Title" xml:space="preserve">
+    <value>Изменение значений элемента</value>
+  </data>
+  <data name="EditorStringId.DetailFormPage_Title" xml:space="preserve">
+    <value>Значения элемента</value>
+  </data>
+  <data name="EditorStringId.DetailNewFormPage_Title" xml:space="preserve">
+    <value>Добавление нового элемента</value>
+  </data>
+  <data name="HtmlEditStringId.InsertImage_Title" xml:space="preserve">
+    <value>Вставить изображение</value>
+  </data>
+  <data name="HtmlEditStringId.InsertImage_TakePhoto" xml:space="preserve">
+    <value>Сделать снимок</value>
+  </data>
+  <data name="HtmlEditStringId.InsertImage_UploadFromLibrary" xml:space="preserve">
+    <value>Загрузить из библиотеки</value>
+  </data>
+  <data name="HtmlEditStringId.SelectFontFamily" xml:space="preserve">
+    <value>Шрифт</value>
+  </data>
+  <data name="HtmlEditStringId.InsertHyperlink_Title" xml:space="preserve">
+    <value>Вставка гиперссылки</value>
+  </data>
+  <data name="HtmlEditStringId.InsertHyperlink_LinkName" xml:space="preserve">
+    <value>Имя ссылки</value>
+  </data>
+  <data name="HtmlEditStringId.InsertHyperlink_LinkAddress" xml:space="preserve">
+    <value>Адрес ссылки</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_Title" xml:space="preserve">
+    <value>Форматирование</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_FontSize" xml:space="preserve">
+    <value>Размер шрифта</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_FontColor" xml:space="preserve">
+    <value>Цвет шрифта</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_BackgroundColor" xml:space="preserve">
+    <value>Цвет фона</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_Title" xml:space="preserve">
+    <value>Вставить таблицу</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_ApplyButton" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_Columns" xml:space="preserve">
+    <value>Столбцы</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_Rows" xml:space="preserve">
+    <value>Строки</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinished" xml:space="preserve">
+    <value>Поиск в документе окончен. Совпадений больше не найдено.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinishedNoMatchesFound" xml:space="preserve">
+    <value>Поиск в документа окончен. Совпадений не найдено.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="PdfViewerStringId.MessageLoadingError" xml:space="preserve">
+    <value>Невозможно загрузить документ PDF, так как указанный файл недоступен или не является документом PDF.</value>
+  </data>
+  <data name="PdfViewerStringId.PageCounter_GoToPage" xml:space="preserve">
+    <value>Перейти на страницу</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Open" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="PdfViewerStringId.PasswordRequest_ProtectedPDF" xml:space="preserve">
+    <value>Защищенный документ PDF</value>
+  </data>
+  <data name="PdfViewerStringId.PasswordRequest_EnterPassword" xml:space="preserve">
+    <value>Введите пароль для открытия документа:</value>
+  </data>
+  <data name="PdfViewerStringId.PasswordRequest_Placeholder" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Clear" xml:space="preserve">
+  <value>Очистить</value>
+</data>
+  <data name="PdfViewerStringId.Button_Save" xml:space="preserve">
+  <value>Сохранить</value>
+</data>
+  <data name="PdfViewerStringId.Button_OK" xml:space="preserve">
+  <value>ОК</value>
+</data>
+  <data name="PdfViewerStringId.Button_Add" xml:space="preserve">
+  <value>Добавить</value>
+</data>
+  <data name="PdfViewerStringId.HighlightAnnotationSubject" xml:space="preserve">
+  <value>Выделение</value>
+</data>
+  <data name="PdfViewerStringId.UnderlineAnnotationSubject" xml:space="preserve">
+  <value>Подчеркивание</value>
+</data>
+  <data name="PdfViewerStringId.SquiggleAnnotationSubject" xml:space="preserve">
+  <value>Волнистая линия</value>
+</data>
+  <data name="PdfViewerStringId.StrikethroughAnnotationSubject" xml:space="preserve">
+  <value>Зачеркивание</value>
+</data>
+  <data name="PdfViewerStringId.FreeTextAnnotationSubject" xml:space="preserve">
+  <value>Текст</value>
+</data>
+  <data name="PdfViewerStringId.CircleAnnotationSubject" xml:space="preserve">
+  <value>Круг</value>
+</data>
+  <data name="PdfViewerStringId.SquareAnnotationSubject" xml:space="preserve">
+  <value>Квадрат</value>
+</data>
+  <data name="PdfViewerStringId.InkAnnotationSubject" xml:space="preserve">
+  <value>Рисунок</value>
+</data>
+  <data name="PdfViewerStringId.StickyAnnotationSubject" xml:space="preserve">
+  <value>Заметка</value>
+</data>
+  <data name="PdfViewerStringId.AnnotationAuthor" xml:space="preserve">
+  <value>Гость</value>
+</data>
+  <data name="PdfViewerStringId.AddStickyNoteHint" xml:space="preserve">
+  <value>Нажмите на страницу, чтобы добавить комментарий</value>
+</data>
+  <data name="PdfViewerStringId.AddFreeTextHint" xml:space="preserve">
+  <value>Нарисуйте прямоугольник на странице, чтобы добавить текст</value>
+</data>
+  <data name="PdfViewerStringId.AddComment" xml:space="preserve">
+  <value>Добавить комментарий</value>
+</data>
+  <data name="PdfViewerStringId.AddReply" xml:space="preserve">
+  <value>Добавить ответ</value>
+</data>
+  <data name="PdfViewerStringId.NewComment" xml:space="preserve">
+  <value>Новый комментарий</value>
+</data>
+  <data name="PdfViewerStringId.AnnotationsPageTitle" xml:space="preserve">
+  <value>Аннотации</value>
+</data>
+  <data name="PdfViewerStringId.Signatures" xml:space="preserve">
+  <value>Подписи</value>
+</data>
+  <data name="PdfViewerStringId.NewSignaturePageTitle" xml:space="preserve">
+  <value>Новая подпись</value>
+</data>
+  <data name="PdfViewerStringId.NewSignaturePlaceholder" xml:space="preserve">
+  <value>Подпишите здесь</value>
+</data>
+    <data name="PdfViewerStringId.NoSignaturesFound" xml:space="preserve">
+  <value>Подписи не найдены. Нажмите «Добавить», чтобы создать подпись.</value>
+</data>
+</root>
