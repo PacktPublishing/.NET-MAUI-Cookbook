@@ -25,7 +25,7 @@ namespace c6_OfflineDataSyncClient.Model
         {
             HttpClientOptions clientOptions = new()
             {
-                Endpoint = new Uri("https://zz4kwzzx-7084.asse.devtunnels.ms/"),
+                Endpoint = new Uri("[YOUR DEV TUNNEL ADDRESS]/"),
             };
             _ = optionsBuilder.UseHttpClientOptions(clientOptions);
         }

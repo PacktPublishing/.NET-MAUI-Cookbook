@@ -55,8 +55,11 @@ namespace c6_OfflineDataSyncClient
             var queuedBlogs = context.DatasyncOperationsQueue.Where(x => x.EntityType == typeof(Blog).FullName);
             foreach (var blog in queuedBlogs)
             {
-                var item = context.Blogs.Find(blog.ItemId);
-                item.InSync = false;
+                if (blog.State != OperationState.Completed)
+                {
+                    var item = context.Blogs.Find(blog.ItemId);
+                    item.InSync = false;
+                }
             }
         }
 
