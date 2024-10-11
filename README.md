@@ -1,5 +1,5 @@
 # NET MAUI Cookbook: Fast track to a full-featured app
-This repository contains examples for the book published by Packt: 
+This repository contains examples for the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github): 
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
