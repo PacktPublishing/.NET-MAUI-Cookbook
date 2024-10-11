@@ -6,7 +6,7 @@ This example compliments a corresponding recipe from the book published by [Pack
 The recipe addresses the following topics:
 * Creating simple layouts with `HorizontalStackPanel`, `VerticalStaskPanel`, `Grid` and `FlexLayout`.
 * The basics of measuring and arranging layouts in .NET MAUI.
-* Why you may encounter issues when using `CollectionView` within `VerticalStackLayout`.
+* Why you may encounter performance and layout issues when using `CollectionView` within `VerticalStackLayout`.
 
 ## Output
 ![Linear layouts](/Images/Linear%20layouts.png)
