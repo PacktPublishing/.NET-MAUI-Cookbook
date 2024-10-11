@@ -4,7 +4,7 @@ This repository contains examples for the book published by [Packt](https://www.
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
 ## Included Examples
-1. [Crafting the Page Layout](/Chapter01)
+1. **Crafting the Page Layout**
     * [Creating horizontal/vertical layouts](/Chapter01/c1-HorizontalAndVerticalLayouts)
     * [Creating grid layouts](/Chapter01/c1-GridLayouts)
     * [Creating scrollable layouts](/Chapter01/c1-ScrollableLayout)
@@ -12,7 +12,7 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Implementing layouts with dynamic orientation](/Chapter01/c1-OrientationSpecificSettings)
     * [Building a layout dynamically based on a collection](/Chapter01/c1-BindableLayout)
     * [Implementing a custom arranging algorithm](/Chapter01/c1-CustomLayout)
-2. [Mastering the MVVM Design Pattern](/Chapter02)
+2. **Mastering the MVVM Design Pattern**
     * [Decoupling the UI from the view model](/Chapter02/c2-DecoupleViewAndViewModel)
     * [Implementing auto-generated view models](/Chapter02/c2-GeneratedViewModels)
     * [Implementing asynchronous commands](/Chapter02/c2-AsyncCommands)
@@ -21,7 +21,7 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Sending messages between view models via different channels](/Chapter02/c2-ViewModelCommunication)
     * [Injecting an application service into a view model using dependency injection](/Chapter02/c2-MvvmDependencyInjection)
     * [Troubleshooting binding errors](/Chapter02/c2-TroubleshootBindings)
-3. [Advanced XAML and UI Techniques](/Chapter03)
+3. **Advanced XAML and UI Techniques**
     * [Extending a UI element without subclassing using attached properties](/Chapter03/c3-AttachedProperties)
     * [Implementing attached behavior to reuse UI logic](/Chapter03/c3-AttachedBehavior)
     * [Implementing ContentView with dependency properties to reuse UI elements](/Chapter03/c3-ReusableContentView)
@@ -30,7 +30,7 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Implementing dark/light theme switching](/Chapter03/c3-DarkAndLightThemes)
     * [Implementing theme support for images and the status bar](/Chapter03/c3-ThemedImagesAndStatusBar)
     * [Drawing custom elements on a canvas](/Chapter03/c3-CustomDrawing)
-4. [Connect to a Database and Implement CRUD Operations](/Chapter04)
+4. **Connect to a Database and Implement CRUD Operations**
     * [Connecting to a local SQLite database via Entity Framework Core](/Chapter04/c4-LocalDatabaseConnection)
     * [Implementing create and delete operations](/Chapter04/c4-CreateDelete)
     * [Implementing detail and edit forms](/Chapter04/c4-ItemEditing)
@@ -39,7 +39,7 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Validating editors in the UI before data posting](/Chapter04/c4-UIValidation)
     * [Implementing data caching for enhanced performance](/Chapter04/c4-DataCaching)
     * [Connecting to a remote Web API service](/Chapter04/c4-WebApiComplete)
-5. [Authentication & Authorization](/Chapter05)
+5. **Authentication & Authorization**
     * [Creating an authentication service with ASP.NET Core Identity](/Chapter05/c5-AuthenticationService)
     * [Building a client application connected to the authentication service](/Chapter05/c5-AuthenticationServiceAndClient)
     * [Implementing role-based access rules on the server](/Chapter05/c5-RoleBasedAccessPart1)
@@ -47,7 +47,7 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Signing in with a Google account](/Chapter05/c5-GoogleAuth)
     * [Managing secured sessions](/Chapter05/c5-SessionManagement)
     * [Implementing biometric authentication](/Chapter05/c5-BiometricAuth)
-6. [Real-Life Scenarios: AI, SignalR, and More](/Chapter06)
+6. **Real-Life Scenarios: AI, SignalR, and More**
     * [Creating an AI assistant that enhances text with OpenAI](/Chapter06/c6-OpenAITextAssistant)
     * [Building a chat bot with Ollama deployed to a self-hosted server](/Chapter06/c6-DeployedAiAssistant)
     * [Detecting a face on an image with a local ONNX model deployed to the device](/Chapter06/c6-AIFaceDetection)
@@ -55,12 +55,12 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Uploading big files in chunks to a server](/Chapter06/c6-FileUploading)
     * [Sending local push notifications](/Chapter06/c6-LocalNotifications)
     * [Synchronizing data between the offline and online databases](/Chapter06/c6-OfflineDataSync)
-7. [Understanding Platform-Specific APIs and Custom Handlers](/Chapter07)
+7. **Understanding Platform-Specific APIs and Custom Handlers**
     * [Compiling code based on the target platform](/Chapter07/c7-ConditionalCompilation)
     * [Implementing a cross-platform API](/Chapter07/c7-CrossPlatformApi/c7-PlatformViewCustomization)
     * [Customizing a platform view with an existing control handler](/Chapter07/)
     * [Creating a custom handler](/Chapter07/c7-DerivedHandler)
-8. [Optimizing Performance](/Chapter08)
+8. **Optimizing Performance**
     * [Comparing performance in debug and release configurations](/Chapter08/c8-DebugVsRelease)
     * [Simplifying a collection item template](/Chapter08/c8-SimplifiedItemTemplate)
     * [Using images with an optimal size](/Chapter08/c8-OptimizedImages)
