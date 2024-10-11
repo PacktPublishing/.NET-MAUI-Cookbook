@@ -3,7 +3,7 @@ This repository contains examples for the book published by [Packt](https://www.
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
-## Table of Contents
+## Included Examples
 1. [Crafting the Page Layout](/Chapter01)
     * [Creating horizontal/vertical layouts](/Chapter01/c1-HorizontalAndVerticalLayouts)
     * [Creating grid layouts](/Chapter01/c1-GridLayouts)
