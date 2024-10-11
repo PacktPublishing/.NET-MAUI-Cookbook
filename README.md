@@ -1,9 +1,9 @@
-# NET MAUI Cookbook: Fast track to a full-featured app
+# NET MAUI Cookbook: Fast Track to a Full-Featured App
 This repository contains examples for the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github): 
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
-## Chapters
+## Table of Contents
 1. [Crafting the Page Layout](/Chapter01)
     * [Creating horizontal/vertical layouts](/Chapter01/c1-HorizontalAndVerticalLayouts)
     * [Creating grid layouts](/Chapter01/c1-GridLayouts)
@@ -69,3 +69,25 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Profiling the application](/Chapter08/)
     * [Detecting memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
     * [Getting rid of memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
+
+## Book Description
+Think about how much time you usually spend building an app in a technology you're still mastering. It often involves grasping new concepts, navigating roadblocks, and even rewriting entire modules as your understanding deepens. This book is designed to save you that time, guiding you toward creating a modern .NET MAUI application with expert-level quality.
+It addresses a wide range of essential tasks and concepts needed for real-world apps, including UI best practices and advanced tips, MVVM, dependency injection, performance and memory profiling. Since real applications often go beyond frontend development, this book also explores integration with backend services for authentication, data processing, synchronization, and real-time updates. Additionally, you’ll learn to implement multiple AI integration strategies - no prior machine learning experience required.
+
+Mastery comes with practice, so the book is organized with step-by-step recipes, each tackling a specific task. Each recipe includes detailed explanations to help you apply the knowledge to your own unique projects.
+
+By the end, you'll have the skills to build high-performance, interactive cross-platform applications with .NET MAUI - saving valuable time on your next projects.
+
+## What You Will Learn
+* Discover effective techniques for creating robust, adaptive layouts
+* Leverage MVVM, DI, cached repository and unit of work patterns
+* Implement CRUD forms with validation, local and remote databases
+* Integrate authentication with a self-hosted service and Google OAuth
+* Incorporate session management and role-based data access
+* Tackle real-time updates, chunked file uploads and offline data mode
+* Explore AI integration strategies: from local device to cloud models
+* Master techniques to empower your app with platform-specific APIs
+* Identify and eliminate performance and memory issues
+
+## Who This Book Is For
+This book is for intermediate developers familiar with .NET MAUI basics, and is perfect for those looking to deepen their understanding and refine their skills for creating cross-platform applications and delivering top-quality applications. The book offers advanced techniques and practical examples for handling real-world development challenges effectively.
