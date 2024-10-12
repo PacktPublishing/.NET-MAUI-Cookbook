@@ -6,7 +6,7 @@ This example compliments a corresponding recipe from the book published by [Pack
 **This recipe in the book covers the following topics:**
 * Building a grid layout for a simple editing form with aligned labels.
 * Creating a grid layout for a list item, where the label spans two rows.
-* Understanding the difference between Auto and * row sizes.
+* Understanding the difference between `Auto` and `*` row sizes.
 * Common challenges you might face in real-world apps with fixed-size and Auto rows.
 
 ## Output
