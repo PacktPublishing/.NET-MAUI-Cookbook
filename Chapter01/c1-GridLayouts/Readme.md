@@ -3,7 +3,7 @@ This example compliments a corresponding recipe from the book published by [Pack
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
-This recipe in the book covers the following topics:
+**This recipe in the book covers the following topics:**
 * Building a grid layout for a simple editing form with aligned labels.
 * Creating a grid layout for a list item, where the label spans two rows.
 * Understanding the difference between Auto and * row sizes.
