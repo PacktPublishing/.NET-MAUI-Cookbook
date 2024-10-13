@@ -3,7 +3,7 @@ This example is part of a recipe from the book published by [Packt](https://www.
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
-**The recipe in the book covers the following topics:**
+**In the book, this recipe covers:**
 * Generating items in a panel using `BindableLayout`.
 * How `BindableLayout` works under the hood.
 * Displaying a separate template when there are no items to show.
