@@ -1,5 +1,5 @@
 # Building a layout dynamically based on a collection
-This example compliments a corresponding recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
+This example is part of a recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
