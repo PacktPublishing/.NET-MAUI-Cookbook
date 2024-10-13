@@ -12,5 +12,3 @@ This example is part of a recipe from the book published by [Packt](https://www.
 * Loading data from an existing database file bundled with the app.
 
 **Note:** This example doesn't include all the points above. For the complete details, please refer to the book.
-## Output
-![Linear layouts](/Images/Segmented%20Bar%20Chart.png)
