@@ -9,6 +9,6 @@ This example is part of a recipe from the book published by [Packt](https://www.
 * Displaying a separate template when there are no items to show.
 * Why `CollectionView` is a better choice than `BindableLayout` for handling large item collections.
 
-**Note:** This example doesn't cover all the points above. For the complete details, please refer to the book.
+**Note:** This example doesn't include all the points above. For the complete details, please refer to the book.
 ## Output
 ![Linear layouts](/Images/BindableLayout.png)
