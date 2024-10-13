@@ -9,4 +9,4 @@ This example is part of a recipe from the book published by [Packt](https://www.
 * Assigning a view model with injected parameters in XAML.
 * The differences between Singleton, Transient, and Scoped registration.
 
-**Note:** This example doesn't cover all the points above. For the complete details, please refer to the book.
+**Note:** This example doesn't include all the points above. For the complete details, please refer to the book.
