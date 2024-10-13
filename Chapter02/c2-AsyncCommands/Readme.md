@@ -7,3 +7,6 @@ This example compliments a corresponding recipe from the book published by [Pack
 * Creating a command that runs asynchronously without blocking the UI thread.
 * Cancelling a command using a cancellation token.
 * Displaying an `ActivityIndicator` based on the `AsyncRelayCommand.IsRunning` property value.
+
+## Output
+![Linear layouts](/Images/AsyncCommandWithActivityIndicator.png)
