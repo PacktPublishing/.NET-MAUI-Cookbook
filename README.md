@@ -3,7 +3,10 @@ This repository contains examples for the book published by [Packt](https://www.
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
-## Included Examples
+## To Run Examples
+Make sure your .NET MAUI environment is set up as described in the officiel  guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Also, it's a good idea to move the downloaded folder closer to the root directory to avoid errors caused by excessively long file paths.
+
+## Table of Contents
 1. **Crafting the Page Layout**
     * [Creating horizontal/vertical layouts](/Chapter01/c1-HorizontalAndVerticalLayouts)
     * [Creating grid layouts](/Chapter01/c1-GridLayouts)
@@ -69,9 +72,6 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Profiling the application](/Chapter08/)
     * [Detecting memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
     * [Getting rid of memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
-
-## To Run Examples
-Make sure your .NET MAUI environment is set up as described in the officiel  guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Also, it's a good idea to move the downloaded folder closer to the root directory to avoid errors caused by excessively long file paths.
 
 ## Book Description
 Think about how much time you usually spend building an app in a technology you're still mastering. It often involves grasping new concepts, navigating roadblocks, and even rewriting entire modules as your understanding deepens. This book is designed to save you that time, guiding you toward creating a modern .NET MAUI application with expert-level quality.
