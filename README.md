@@ -3,8 +3,10 @@ This repository contains examples for the book published by [Packt](https://www.
 
 [NET MAUI Cookbook: Fast track to a full-featured app with MVVM, CRUD, AI, authentication, real-time updates and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
 
-## To Run Examples
-Make sure your .NET MAUI environment is set up as described in the officiel  guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Also, it's a good idea to move the downloaded folder closer to the root directory to avoid errors caused by excessively long file paths.
+## Before You Begin
+Make sure your .NET MAUI environment is set up according to the official guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Some examples also include an ASP.NET Core service, so ensure you have the necessary workloads installed: [ASP.NET Core Prerequisites](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio#prerequisites).
+
+Additionally, it's recommended to move the downloaded folder closer to the root directory to avoid errors caused by long file paths.
 
 ## Table of Contents
 1. **Crafting the Page Layout**
