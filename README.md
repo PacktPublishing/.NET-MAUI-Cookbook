@@ -70,6 +70,9 @@ This repository contains examples for the book published by [Packt](https://www.
     * [Detecting memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
     * [Getting rid of memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
 
+## To Run Examples
+Make sure your .NET MAUI environment is set up as described in the officiel  guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Also, it's a good idea to move the downloaded folder closer to the root directory to avoid errors caused by excessively long file paths.
+
 ## Book Description
 Think about how much time you usually spend building an app in a technology you're still mastering. It often involves grasping new concepts, navigating roadblocks, and even rewriting entire modules as your understanding deepens. This book is designed to save you that time, guiding you toward creating a modern .NET MAUI application with expert-level quality.
 It addresses a wide range of essential tasks and concepts needed for real-world apps, including UI best practices and advanced tips, MVVM, dependency injection, performance and memory profiling. Since real applications often go beyond frontend development, this book also explores integration with backend services for authentication, data processing, synchronization, and real-time updates. Additionally, you’ll learn to implement multiple AI integration strategies - no prior machine learning experience required.
