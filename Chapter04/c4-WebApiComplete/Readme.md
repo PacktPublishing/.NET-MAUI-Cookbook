@@ -31,7 +31,7 @@ This example is part of a recipe from the book published by [Packt](https://www.
     ```
     dotnet run --launch-profile https
     ```
-    The server should start on port `7197`, as specified in launchSettings.json.
+    The server should start on port `7197`, as specified in the [launchSettings.json](./c4-WebApiServer/Properties/launchSettings.json) file.
 5. Open this URL in your browser to view Swagger: https://localhost:7197/swagger
 6. [Run the .NET MAUI application](https://github.com/JaneySprings/DotNet.Meteor?tab=readme-ov-file#run-the-application).
 
