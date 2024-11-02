@@ -1,7 +1,7 @@
-﻿using c4_LocalDatabaseConnection.Views;
+﻿using c4_LocalDatabaseConnection.DataAccess;
+using c4_LocalDatabaseConnection.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

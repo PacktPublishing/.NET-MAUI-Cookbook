@@ -1,6 +1,6 @@
-﻿using c4_LocalDatabaseConnection.ViewModels;
+﻿using c4_LocalDatabaseConnection.DataAccess;
+using c4_LocalDatabaseConnection.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using SharedModel;
 using System;
 using System.Collections;
 using System.Collections.Generic;

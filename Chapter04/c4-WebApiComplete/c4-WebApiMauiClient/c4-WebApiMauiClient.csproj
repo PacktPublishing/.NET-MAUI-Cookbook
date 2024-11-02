@@ -66,10 +66,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\SharedModel\SharedModel.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="Views\CustomerDetailPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

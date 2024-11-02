@@ -1,6 +1,5 @@
 ﻿using c4_LocalDatabaseConnection.DataAccess;
 using c4_LocalDatabaseConnection.ViewModels;
-using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

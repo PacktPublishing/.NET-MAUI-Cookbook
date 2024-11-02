@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SharedModel;
 
 namespace CrmWebApi {
     public class CrmContext : DbContext {

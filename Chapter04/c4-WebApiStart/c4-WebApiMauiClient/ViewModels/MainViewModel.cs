@@ -1,10 +1,10 @@
-﻿using c4_LocalDatabaseConnection.Views;
+﻿using c4_LocalDatabaseConnection.DataAccess;
+using c4_LocalDatabaseConnection.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

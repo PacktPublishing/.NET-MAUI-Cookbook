@@ -4,7 +4,7 @@
              xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
-             xmlns:shared="clr-namespace:SharedModel;assembly=SharedModel"
+             xmlns:model="clr-namespace:c4_LocalDatabaseConnection.DataAccess"
              x:Class="c4_LocalDatabaseConnection.MainPage">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
@@ -15,7 +15,7 @@
             Command="{Binding ShowingCommand}"/>
     </ContentPage.Behaviors>
     <ContentPage.Resources>
-        <DataTemplate x:Key="customerTemplate" x:DataType="shared:Customer">
+        <DataTemplate x:Key="customerTemplate" x:DataType="model:Customer">
             <SwipeView>
                 <SwipeView.RightItems>
                     <SwipeItem Text="Delete" 
