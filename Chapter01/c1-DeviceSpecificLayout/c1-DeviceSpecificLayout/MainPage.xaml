@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c1_DeviceSpecificLayout"
+             x:Class="c1_DeviceSpecificLayout.MainPage">
+    <!--Step 1-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition 
+              Height="{OnIdiom Desktop=200, Phone=*}"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border BackgroundColor="Coral"/>
+        <Border Grid.Row="1" BackgroundColor="DarkRed"/>
+    </Grid>
+
+    <!--Step 2-->
+    <!--<ContentPage.Resources>
+        <Style TargetType="Grid" x:Key="winUiBorderStyle">
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="20"/>
+        </Style>
+        <Style TargetType="Grid" x:Key="androidBorderStyle">
+            <Setter Property="Padding" Value="10,0,10,10"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+    <Border Style="{OnIdiom Desktop={StaticResource winUiBorderStyle}, Phone={StaticResource androidBorderStyle}}" BackgroundColor="Coral">
+        <Border BackgroundColor="DarkRed"/>
+    </Border>-->
+
+
+    <!--Step 3-->
+    <!--<ContentPage.Content>
+        <OnIdiom x:TypeArguments="View">
+            <OnIdiom.Phone>
+                <local:PhoneView />
+            </OnIdiom.Phone>
+            <OnIdiom.Desktop>
+                <local:DesktopView />
+            </OnIdiom.Desktop>
+        </OnIdiom>
+    </ContentPage.Content>-->
+    
+    <!--Step 4-->
+    <!--<Button IsVisible="{OnPlatform Android=True, iOS=False}"/>-->
+
+</ContentPage>

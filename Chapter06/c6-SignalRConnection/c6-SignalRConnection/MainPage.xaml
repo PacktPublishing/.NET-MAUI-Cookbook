@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:c6_SignalRConnection"
+             xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c6_SignalRConnection.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <tk:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding InitializeCommand}"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <DataTemplate x:Key="bidTemplate"
+                      x:DataType="vm:BidData">
+            <Grid ColumnDefinitions="*,100"
+                  RowDefinitions="30,26"
+                  Padding="6,18">
+                <Label Text="{Binding Price, StringFormat='{0:C0}'}"
+                       TextColor="Green"
+                       FontSize="20"/>
+                <Label Text="{Binding Bidder}"
+                       Grid.Row="1"/>
+                <Button Text="Accept"
+                        Command="{Binding Path=BindingContext.AcceptBidCommand, 
+                                Source={RelativeSource Mode=FindAncestor, AncestorType={x:Type CollectionView}}}"
+                        CommandParameter="{Binding}"
+                        HeightRequest="40"
+                        Grid.Column="1"
+                        Grid.RowSpan="2"/>
+            </Grid>
+        </DataTemplate>
+    </ContentPage.Resources>
+    <CollectionView ItemsSource="{Binding Bids}"
+                    ItemTemplate="{StaticResource bidTemplate}"/>
+</ContentPage>

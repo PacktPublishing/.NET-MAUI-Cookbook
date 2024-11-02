@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c1_OrientationSpecificSettings.MainPage">
+    <!--Step 1-->
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroupList>
+            <VisualStateGroup>
+                <VisualState x:Name="Portrait">
+                    <VisualState.StateTriggers>
+                        <OrientationStateTrigger Orientation="Portrait" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter TargetName="rootGrid" Property="Grid.RowDefinitions" Value="*,*" />
+                        <Setter TargetName="border2" Property="Grid.Row" Value="1"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Landscape">
+                    <VisualState.StateTriggers>
+                        <OrientationStateTrigger Orientation="Landscape" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter TargetName="rootGrid" Property="Grid.RowDefinitions" Value="*,*" />
+                        <Setter TargetName="border2" Property="Grid.Row" Value="1"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateGroupList>
+    </VisualStateManager.VisualStateGroups>
+    <Grid x:Name="rootGrid">
+        <Border x:Name="border1" BackgroundColor="Coral"/>
+        <Border x:Name="border2" Background="DarkRed"/>
+    </Grid>
+</ContentPage>

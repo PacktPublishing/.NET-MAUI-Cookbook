@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c1_HorizontalAndVerticalLayouts.MainPage">
+    <!--Step 1-->
+    <HorizontalStackLayout Spacing="50">
+        <Button Text="Button 1"/>
+        <Button Text="Button 2"/>
+        <Button Text="Button 3"/>
+        <Button Text="Button 4"/>
+    </HorizontalStackLayout>
+        
+    <!--Step 2-->
+    <!--<VerticalStackLayout Spacing="50">
+        <Button Text="Button 1"/>
+        <Button Text="Button 2"/>
+        <Button Text="Button 3"/>
+        <Button Text="Button 4"/>
+    </VerticalStackLayout>-->
+
+    <!--Step 3-->
+    <!--<Grid RowDefinitions="*,*,*,*" RowSpacing="50">
+        <Button Text="Button 1"/>
+        <Button Text="Button 2" Grid.Row="1"/>
+        <Button Text="Button 3" Grid.Row="2"/>
+        <Button Text="Button 4" Grid.Row="3"/>
+    </Grid>-->
+
+    <!--Step 4-->
+    <!--<FlexLayout Wrap="Wrap">
+        <Button Text="Button 1" Margin="25"/>
+        <Button Text="Button 2" Margin="25"/>
+        <Button Text="Button 3" Margin="25"/>
+        <Button Text="Button 4" Margin="25"/>
+        <Button Text="Button 5" Margin="25"/>
+    </FlexLayout>-->
+</ContentPage>

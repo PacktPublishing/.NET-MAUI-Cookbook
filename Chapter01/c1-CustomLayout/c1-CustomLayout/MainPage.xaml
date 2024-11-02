@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c1_CustomLayout"
+             x:Class="c1_CustomLayout.MainPage">
+    <local:CircularLayout WidthRequest="300" 
+                          HeightRequest="300" 
+                          BackgroundColor="Coral" 
+                          Radius="100"
+                          VerticalOptions="Start" 
+                          HorizontalOptions="Start">
+        <Button Text="Button1"/>
+        <Button Text="Button2"/>
+        <Button Text="Button3"/>
+        <Button Text="Button4"/>
+        <Button Text="Button5"/>
+        <Button Text="Button6"/>
+        <Button Text="Button7"/>
+        <Button Text="Button8"/>
+    </local:CircularLayout>
+</ContentPage>

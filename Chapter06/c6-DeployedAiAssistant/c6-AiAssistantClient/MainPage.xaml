@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:c6_AiAssistantClient"
+             xmlns:idk="clr-namespace:Indiko.Maui.Controls.Markdown;assembly=Indiko.Maui.Controls.Markdown"
+             x:Class="c6_AiAssistantClient.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <Grid ColumnDefinitions="*,70"
+        RowDefinitions="*, 40"
+        RowSpacing="20"
+        Padding="10">
+        <ScrollView Grid.ColumnSpan="2"
+                VerticalOptions="End">
+            <idk:MarkdownView MarkdownText="{Binding Answer}" />
+        </ScrollView>
+        <Entry Text="{Binding Message}"
+            Grid.Row="1"/>
+        <Button Text="Send"
+            Command="{Binding SendMessageCommand}"
+            Grid.Row="1"
+            Grid.Column="1"/>
+    </Grid>
+</ContentPage>

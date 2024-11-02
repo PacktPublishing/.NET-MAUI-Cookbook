@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c8_AsyncLoading"
+             xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c8_AsyncLoading.MainPage">
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <tk:EventToCommandBehavior EventName="Appearing"
+                                Command="{Binding LoadDataCommand}"/>
+    </ContentPage.Behaviors>
+    <VerticalStackLayout>
+        <ActivityIndicator IsRunning="{Binding LoadDataCommand.IsRunning}"/>
+        <Label Text="{Binding ProductName}"/>
+        <Label Text="{Binding Description}"/>
+    </VerticalStackLayout>
+
+</ContentPage>

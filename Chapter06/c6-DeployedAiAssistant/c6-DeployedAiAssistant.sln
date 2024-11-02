@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c6-DeployedAiAssistant", "c6-DeployedAiAssistant\c6-DeployedAiAssistant.csproj", "{810BDB49-3231-4913-B8F2-495DFDB68753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c6-AiAssistantClient", "c6-AiAssistantClient\c6-AiAssistantClient.csproj", "{9998B6B8-3238-4BE8-BDE7-B937C03853CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{810BDB49-3231-4913-B8F2-495DFDB68753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810BDB49-3231-4913-B8F2-495DFDB68753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810BDB49-3231-4913-B8F2-495DFDB68753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810BDB49-3231-4913-B8F2-495DFDB68753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9998B6B8-3238-4BE8-BDE7-B937C03853CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9998B6B8-3238-4BE8-BDE7-B937C03853CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9998B6B8-3238-4BE8-BDE7-B937C03853CC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9998B6B8-3238-4BE8-BDE7-B937C03853CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9998B6B8-3238-4BE8-BDE7-B937C03853CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9998B6B8-3238-4BE8-BDE7-B937C03853CC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FB62CEE-AA95-4A81-9B33-C7A3D73A0AE5}
+	EndGlobalSection
+EndGlobal

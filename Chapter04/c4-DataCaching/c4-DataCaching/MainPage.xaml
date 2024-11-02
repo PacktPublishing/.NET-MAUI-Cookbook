@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
+             x:Class="c4_LocalDatabaseConnection.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding ShowingCommand}"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <DataTemplate x:Key="customerTemplate" x:DataType="local:Customer">
+            <SwipeView>
+                <SwipeView.RightItems>
+                    <SwipeItem Text="Delete" 
+                                   BackgroundColor="IndianRed" 
+                                   Command="{Binding Path=BindingContext.DeleteCustomerCommand, Source={RelativeSource Mode=FindAncestor, AncestorType={x:Type CollectionView}}}"
+                                   CommandParameter="{Binding}"/>
+                </SwipeView.RightItems>
+                <Grid RowDefinitions="40,40" 
+                                  ColumnDefinitions="*,*"
+                                  Padding="10">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
+                                        Command="{Binding Path=BindingContext.ShowDetailFormCommand, Source={RelativeSource Mode=FindAncestor, AncestorType={x:Type CollectionView}}}"
+                                            CommandParameter="{Binding}"/>
+                    </Grid.GestureRecognizers>
+                    <Label Text="{Binding FirstName}"/>
+                    <Label Text="{Binding LastName}" 
+                                       Grid.Column="1"/>
+                    <Label Text="{Binding Email}"
+                                       TextColor="DarkGray"
+                                       Grid.Row="1" 
+                                       Grid.ColumnSpan="2"/>
+                </Grid>
+            </SwipeView>
+        </DataTemplate>
+    </ContentPage.Resources>
+    <Grid>
+        <RefreshView IsRefreshing="{Binding Refreshing}"
+             Command="{Binding LoadCustomersCommand}">
+            <CollectionView ItemsSource="{Binding Customers}" 
+                            ItemTemplate="{StaticResource customerTemplate}"/>
+        </RefreshView>
+        <Button Text="+"
+            Command="{Binding ShowNewFormCommand}"
+            WidthRequest="56"
+            HeightRequest="56"
+            FontSize="24"
+            HorizontalOptions="End" 
+            VerticalOptions="End"
+            Margin="16"/>
+    </Grid>
+</ContentPage>

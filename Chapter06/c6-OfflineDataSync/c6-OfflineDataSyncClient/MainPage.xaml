@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:c6_OfflineDataSyncClient"
+             xmlns:model="clr-namespace:c6_OfflineDataSyncClient.Model"
+             x:Class="c6_OfflineDataSyncClient.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <DataTemplate x:Key="blogTemplate"
+                    x:DataType="model:Blog">
+            <Label Text="{Binding Title}" 
+                Margin="10">
+                <Label.Triggers>
+                    <DataTrigger Binding="{Binding InSync}" 
+                                    Value="False"
+                                    TargetType="Label">
+                        <Setter Property="TextColor" Value="CadetBlue"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+        </DataTemplate>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="Auto, *,50"
+        ColumnDefinitions="*,50"
+        Padding="10">
+        <Label Text="Out of sync"
+            IsVisible="{Binding OutOfSync}"
+            FontSize="24"
+            TextColor="CadetBlue"/>
+        <RefreshView Command="{Binding RefreshCommand}"
+                     IsRefreshing="{Binding IsRefreshing}"
+                     Grid.Row="1"
+                     Grid.ColumnSpan="2">
+            <CollectionView ItemsSource="{Binding Items}" 
+                    ItemTemplate="{StaticResource blogTemplate}"
+                    Grid.Row="1"/>
+        </RefreshView>
+        <Entry x:Name="newBlogEntry"
+            Text="{Binding NewItemText}"
+            Grid.Row="2"/>
+        <Button Text="+"
+            Command="{Binding AddBlogCommand}"
+            Clicked="OnAddClicked"
+            Grid.Row="2"
+            Grid.Column="1"/>
+    </Grid>
+
+</ContentPage>

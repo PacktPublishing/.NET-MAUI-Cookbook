@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CollectionViewStringId.OutlookIntervals">
+    <value>Antigüos;Mes pasado;Mas antiguos este mes;Hace tres semanas;Hace dos semanas;Semana pasada;;;;;;;;Ayer;Hoy;Mañana;;;;;;;;Próxima semana;Próximas 2 semanas;Próximas 3 semanas;Mas adelante este mes;Mes que viene;Futuros;</value>
+  </data>
+  <data name="EditorStringId.FilteringUIForm_PageTitle">
+    <value>Filtros</value>
+  </data>
+  <data name="EditorStringId.DateEdit_Picker_CANCEL">
+    <value>Cancelar</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_ApplyButtonText">
+    <value>Aplicar</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_SearchPlaceholderText">
+    <value>Buscar</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_CancelButtonText">
+    <value>Cancelar</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_OkButtonText">
+    <value>Aceptar</value>
+  </data>
+  <data name="EditorStringId.DateEdit_Picker_OK">
+    <value>Aceptar</value>
+  </data>
+  <data name="EditorStringId.FormPickerItem_ClearButtonText" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryAverage">
+    <value>PRO</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryCount">
+    <value>Recuento</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryCustom">
+    <value>Val.</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryMax">
+    <value>MÁX</value>
+  </data>
+  <data name="GridStringId.Caption_SummaryMin">
+    <value>MÍN</value>
+  </data>
+  <data name="GridStringId.Caption_SummarySum">
+    <value>SUMA</value>
+  </data>
+  <data name="GridStringId.EditorFormPage_EditValues" xml:space="preserve">
+    <value>Editar valores</value>
+  </data>
+  <data name="GridStringId.EditorFormPage_Save">
+    <value>Guardar</value>
+  </data>
+  <data name="GridStringId.GridOutlookIntervals">
+    <value>Antigüos;Mes pasado;Mas antiguos este mes;Hace tres semanas;Hace dos semanas;Semana pasada;;;;;;;;Ayer;Hoy;Mañana;;;;;;;;Próxima semana;Próximas 2 semanas;Próximas 3 semanas;Mas adelante este mes;Mes que viene;Futuros;</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Day">
+    <value>día</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Days">
+    <value>días</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hour">
+    <value>hora</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hours">
+    <value>horas</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minute">
+    <value>minuto</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minutes">
+    <value>minutos</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Week">
+    <value>semana</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Weeks">
+    <value>semanas</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentDetailFormat_Recurrence" xml:space="preserve">
+    <value>Repetición {0}</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentDetailFormat_Status" xml:space="preserve">
+    <value>Estado: {0}</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_AddReminder" xml:space="preserve">
+    <value>Agregar un aviso</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_AllDay" xml:space="preserve">
+    <value>Todo el día</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_Label">
+    <value>Etiqueta</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_Repeat" xml:space="preserve">
+    <value>Repetición</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_Status">
+    <value>Estado</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_SubjectPlaceholder" xml:space="preserve">
+    <value>Nombre de la cita</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_AcceptAppointmentRemoveAction">
+    <value>Sí</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_CancelAction">
+    <value>Cancelar</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_CancelAppointmentRemoveAction">
+    <value>No</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditAppointmentTitle" xml:space="preserve">
+    <value>Modificar cita</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_NewAppointmentTitle">
+    <value>Nueva cita</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemoveAppointmentTitle" xml:space="preserve">
+    <value>¿Eliminar cita?</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Anniversary">
+    <value>Aniversario</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Birthday">
+    <value>Cumpleaños</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Business">
+    <value>Trabajo</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Important">
+    <value>Importante</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_MustAttend">
+    <value>Requiere asistencia</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_NeedsPreparation">
+    <value>Requiere preparación</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_None">
+    <value>Ninguno</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Personal">
+    <value>Particular</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_PhoneCall">
+    <value>Llamada telefónica</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_TravelRequired">
+    <value>Requiere viajar</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Vacation">
+    <value>Vacaciones</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_Label">
+    <value>Etiqueta</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_Reminder">
+    <value>Recordatorio</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_Status">
+    <value>Estado</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Busy">
+    <value>Ocupado</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Free">
+    <value>Libre</value>
+  </data>
+  <data name="SchedulerStringId.Caption_OutOfOffice">
+    <value>Fuera de la oficina</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Tentative">
+    <value>Provisional</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysEveryDay">
+    <value>Día</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWeekendDays">
+    <value>Día no laborable</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWorkDays">
+    <value>Día laborable</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFirst">
+    <value>Primero</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFourth">
+    <value>cuarto</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthLast">
+    <value>Último</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthSecond">
+    <value>Segundo</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthThird">
+    <value>Tercero</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WorkingElsewhere" xml:space="preserve">
+    <value>Trabajando en otro sitio</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_After" xml:space="preserve">
+    <value>Posterior</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_Never">
+    <value>Nunca</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_Occurrences">
+    <value>ocurrencias</value>
+  </data>
+  <data name="SchedulerStringId.CommonRadioGroup_On">
+    <value>En</value>
+  </data>
+  <data name="SchedulerStringId.DayRadioGroup_DayOrDays">
+    <value>día(s)</value>
+  </data>
+  <data name="SchedulerStringId.DayRadioGroup_Every">
+    <value>Cada</value>
+  </data>
+  <data name="SchedulerStringId.DayRadioGroup_EveryWeekDay">
+    <value>Cada día de semana</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_DayOrDays">
+    <value>día(s)</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_MonthOrMonths">
+    <value>mes(es)</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_OfEvery">
+    <value>de cada</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_The">
+    <value>El/La</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayOfWeekForDailyRecurrence">
+    <value>Día no válido para una peridicidad diaria. Solamente WeekDays.EveryDay, WeekDays.WeekendDays y WeekDays.WorkDays son válidos en éste contexto.</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_EndRepeat" xml:space="preserve">
+    <value>Finalizar repetición</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_Frequency" xml:space="preserve">
+    <value>Frecuencia</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_Repeat" xml:space="preserve">
+    <value>Repetir</value>
+  </data>
+  <data name="SchedulerStringId.RecurrenceEditPage_RepeatOn" xml:space="preserve">
+    <value>Repetir el</value>
+  </data>
+  <data name="SchedulerStringId.ReminderAddPage_Custom" xml:space="preserve">
+    <value>Personalizar</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_AtTimeOfEvent" xml:space="preserve">
+    <value>En el momento del evento</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Custom" xml:space="preserve">
+    <value>Benutzerdefiniert</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Day">
+    <value>día</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Days" xml:space="preserve">
+    <value>días</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Hour">
+    <value>hora</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Hours" xml:space="preserve">
+    <value>horas</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Minute">
+    <value>minuto</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Minutes" xml:space="preserve">
+    <value>minutos</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Second" xml:space="preserve">
+    <value>segundo</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_Seconds" xml:space="preserve">
+    <value>segundos</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_TimeBefore" xml:space="preserve">
+    <value>{0} antes</value>
+  </data>
+  <data name="SchedulerStringId.ReminderTextFormatter_TimeBeforeStart">
+    <value>{0} antes del inicio</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeDaily">
+    <value>Diariamente</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeHourly">
+    <value>Por horas</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMinutely">
+    <value>Por minutos</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMonthly">
+    <value>Mensualmente</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeNever">
+    <value>Nunca</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeWeekly">
+    <value>Semanalmente</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeYearly">
+    <value>Anualmente</value>
+  </data>
+  <data name="SchedulerStringId.WeekRadioGroup_Every">
+    <value>Cada</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_Every">
+    <value>Cada</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_OfEvery">
+    <value>de cada</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEditPage_AddAnotherReminder" xml:space="preserve">
+    <value>Agregar otro recordatorio</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditFutureOccurrencesAction" xml:space="preserve">
+    <value>Cambiar esta y todas las citas futuras</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditOccurrenceAction" xml:space="preserve">
+    <value>Cambiar solo esta cita</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_EditPatternAction" xml:space="preserve">
+    <value>Cambiar todas las citas de la serie</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_ReminderCustomization" xml:space="preserve">
+    <value>Personalización de recordatorios</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemoveFutureOccurrencesAction" xml:space="preserve">
+    <value>Eliminar esta y todas las citas futuras</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemoveOccurrenceAction" xml:space="preserve">
+    <value>Eliminar solo esta cita</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_RemovePatternAction" xml:space="preserve">
+    <value>Eliminar todas las citas de la serie
+    </value>
+  </data>
+  <data name="SchedulerStringId.AppointmentEdit_SelectAppointmentTypeTitle" xml:space="preserve">
+    <value>Esta es una cita recurrente.</value>
+  </data>
+  <data name="SchedulerStringId.MonthRadioGroup_Each" xml:space="preserve">
+    <value>Cada</value>
+  </data>
+  <data name="SchedulerStringId.TimeZoneSelectPage_SearchBarPlaceholderText" xml:space="preserve">
+    <value>Zona horaria</value>
+  </data>
+  <data name="SchedulerStringId.WeekRadioGroup_WeekOrWeeks" xml:space="preserve">
+    <value>semana(s)</value>
+  </data>
+  <data name="SchedulerStringId.YearRadioGroup_DayOf" xml:space="preserve">
+    <value>día de</value>
+  </data>
+  <data name="SchedulerStringId.Agenda_EmptyDay" xml:space="preserve">
+    <value>No hay eventos</value>
+  </data>
+  <data name="SchedulerStringId.Agenda_AllDay" xml:space="preserve">
+    <value>Todo el día</value>
+  </data>
+  <data name="SchedulerStringId.Agenda_Today">
+    <value>Hoy</value>
+  </data>
+  <data name="EditorStringId.DetailEditFormPage_Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="EditorStringId.DetailEditFormPage_Title" xml:space="preserve">
+    <value>Editar valores de elementos</value>
+  </data>
+  <data name="EditorStringId.DetailFormPage_Title" xml:space="preserve">
+    <value>Valores de artículos</value>
+  </data>
+  <data name="EditorStringId.DetailNewFormPage_Title" xml:space="preserve">
+    <value>Agregar ítem nuevo</value>
+  </data>
+  <data name="HtmlEditStringId.InsertImage_Title" xml:space="preserve">
+    <value>Insertar imagen</value>
+  </data>
+  <data name="HtmlEditStringId.InsertImage_TakePhoto" xml:space="preserve">
+    <value>Desde la cámara</value>
+  </data>
+  <data name="HtmlEditStringId.InsertImage_UploadFromLibrary" xml:space="preserve">
+    <value>Desde fotos</value>
+  </data>
+  <data name="HtmlEditStringId.SelectFontFamily" xml:space="preserve">
+    <value>Fuentey</value>
+  </data>
+  <data name="HtmlEditStringId.InsertHyperlink_Title" xml:space="preserve">
+    <value>Insertar hipervínculo</value>
+  </data>
+  <data name="HtmlEditStringId.InsertHyperlink_LinkName" xml:space="preserve">
+    <value>Nombre de vínculo</value>
+  </data>
+  <data name="HtmlEditStringId.InsertHyperlink_LinkAddress" xml:space="preserve">
+    <value>Vincular dirección</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_Title" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_FontSize" xml:space="preserve">
+    <value>Tamaño de fuente</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_FontColor" xml:space="preserve">
+    <value>Color de fuente</value>
+  </data>
+  <data name="HtmlEditStringId.TextSettings_BackgroundColor" xml:space="preserve">
+    <value>Color de fondo</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_Title" xml:space="preserve">
+    <value>Insertar tabla</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_ApplyButton" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_Columns" xml:space="preserve">
+    <value>Columnas</value>
+  </data>
+  <data name="HtmlEditStringId.InsertTable_Rows" xml:space="preserve">
+    <value>Filas</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinished" xml:space="preserve">
+    <value>Terminó la búsqueda en todo el documento. No se encontraron más coincidencias.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinishedNoMatchesFound" xml:space="preserve">
+    <value>Terminó la búsqueda en todo el documento. No se encontraron coincidencias.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="PdfViewerStringId.MessageLoadingError" xml:space="preserve">
+    <value>No se puede cargar el documento PDF, porque el siguiente archivo no está disponible o no es un documento válido de PDF.</value>
+  </data>
+  <data name="PdfViewerStringId.PageCounter_GoToPage" xml:space="preserve">
+    <value>Ir a la página</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Open" xml:space="preserve">
+    <value>Arbir</value>
+  </data>
+  <data name="PdfViewerStringId.PasswordRequest_ProtectedPDF" xml:space="preserve">
+    <value>PDF protegido</value>
+  </data>
+  <data name="PdfViewerStringId.PasswordRequest_EnterPassword" xml:space="preserve">
+    <value>Introduzca la contraseña para arbir este documento:</value>
+  </data>
+  <data name="PdfViewerStringId.PasswordRequest_Placeholder" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Clear" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Save" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="PdfViewerStringId.Button_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="PdfViewerStringId.Button_Add" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="PdfViewerStringId.HighlightAnnotationSubject" xml:space="preserve">
+    <value>Hervorheben</value>
+  </data>
+  <data name="PdfViewerStringId.UnderlineAnnotationSubject" xml:space="preserve">
+    <value>Unterstreichen</value>
+  </data>
+  <data name="PdfViewerStringId.SquiggleAnnotationSubject" xml:space="preserve">
+    <value>Wellenlinie</value>
+  </data>
+  <data name="PdfViewerStringId.StrikethroughAnnotationSubject" xml:space="preserve">
+    <value>Durchstreichen</value>
+  </data>
+  <data name="PdfViewerStringId.FreeTextAnnotationSubject" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="PdfViewerStringId.CircleAnnotationSubject" xml:space="preserve">
+    <value>Kreis</value>
+  </data>
+  <data name="PdfViewerStringId.SquareAnnotationSubject" xml:space="preserve">
+    <value>Quadrat</value>
+  </data>
+  <data name="PdfViewerStringId.InkAnnotationSubject" xml:space="preserve">
+    <value>Zeichnung</value>
+  </data>
+  <data name="PdfViewerStringId.StickyAnnotationSubject" xml:space="preserve">
+    <value>Haftnotiz</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationAuthor" xml:space="preserve">
+    <value>Gast</value>
+  </data>
+  <data name="PdfViewerStringId.AddStickyNoteHint" xml:space="preserve">
+    <value>Tippen Sie auf die Seite, um einen Kommentar hinzuzufügen</value>
+  </data>
+  <data name="PdfViewerStringId.AddFreeTextHint" xml:space="preserve">
+    <value>Zeichnen Sie ein Rechteck auf die Seite, um Text hinzuzufügen</value>
+  </data>
+  <data name="PdfViewerStringId.AddComment" xml:space="preserve">
+    <value>Kommentar hinzufügen</value>
+  </data>
+  <data name="PdfViewerStringId.AddReply" xml:space="preserve">
+    <value>Antwort hinzufügen</value>
+  </data>
+  <data name="PdfViewerStringId.NewComment" xml:space="preserve">
+    <value>Neuer Kommentar</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationsPageTitle" xml:space="preserve">
+    <value>Anmerkungen</value>
+  </data>
+  <data name="PdfViewerStringId.Signatures" xml:space="preserve">
+    <value>Unterschriften</value>
+  </data>
+  <data name="PdfViewerStringId.NewSignaturePageTitle" xml:space="preserve">
+    <value>Neue Unterschrift</value>
+  </data>
+  <data name="PdfViewerStringId.NewSignaturePlaceholder" xml:space="preserve">
+    <value>Hier unterschreiben</value>
+  </data>
+  <data name="PdfViewerStringId.NoSignaturesFound" xml:space="preserve">
+    <value>Keine Unterschriften gefunden. Tippen Sie auf „Hinzufügen“, um eine Unterschrift zu erstellen.</value>
+  </data>
+</root>

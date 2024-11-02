@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
+             xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
+             x:Class="c4_LocalDatabaseConnection.Views.CustomerDetailPage"
+             Title="Customer Details">
+    <ContentPage.BindingContext>
+        <vm:CustomerDetailViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Command="{Binding ShowEditFormCommand}"/>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <Label Text="{Binding Item.Id}"/>
+        <Label Text="{Binding Item.FirstName}"/>
+        <Label Text="{Binding Item.LastName}"/>
+        <Label Text="{Binding Item.Email}"/>
+    </VerticalStackLayout>
+</ContentPage>

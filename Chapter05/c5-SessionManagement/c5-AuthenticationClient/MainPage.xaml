@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:c5_AuthenticationClient"
+             xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c5_AuthenticationClient.MainPage">
+    <ContentPage.Behaviors>
+        <tk:EventToCommandBehavior 
+    EventName="Appearing" 
+    Command="{Binding SessionLogInCommand}"/>
+    </ContentPage.Behaviors>
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10">
+        <Entry Placeholder="Email"
+            Text="{Binding Email}"/>
+        <Entry Placeholder="Password"
+            Text="{Binding Password}"
+               IsPassword="True"/>
+        <Button Text="Log In" 
+            Command="{Binding LogInCommand}"/>
+        <Button Text="Sign in with Google"
+            Command="{Binding GoogleSignInCommand}"/>
+    </VerticalStackLayout>
+
+</ContentPage>

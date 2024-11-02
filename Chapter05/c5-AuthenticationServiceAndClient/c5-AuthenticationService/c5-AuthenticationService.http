@@ -1,0 +1,6 @@
+@c5_AuthenticationService_HostAddress = http://localhost:5287
+
+GET {{c5_AuthenticationService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

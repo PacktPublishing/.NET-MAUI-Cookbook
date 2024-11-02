@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c2_ViewModelCommunication.Views.PerformanceMonitorView"
+             xmlns:vm="clr-namespace:c2_ViewModelCommunication.ViewModels"
+             x:DataType="{x:Type vm:PerformanceMonitorViewModel}">
+    <ContentView.BindingContext>
+        <vm:PerformanceMonitorViewModel/>
+    </ContentView.BindingContext>
+    <VerticalStackLayout>
+        <Label Text="Performance" FontSize="30"/>
+        <CollectionView ItemsSource="{Binding PerformanceAlerts}"/>
+    </VerticalStackLayout>
+</ContentView>

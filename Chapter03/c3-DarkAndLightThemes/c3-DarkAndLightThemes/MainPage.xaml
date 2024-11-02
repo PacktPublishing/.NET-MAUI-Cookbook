@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:c3_DarkAndLightThemes"
+             x:Class="c3_DarkAndLightThemes.MainPage">
+    <Grid>
+        <Picker ItemsSource="{Binding Source={x:Static local:ThemeSettings.ThemesList}}"
+                SelectedItem="{Binding Source={x:Static local:ThemeSettings.Current}, Path=SelectedTheme}"
+                ItemDisplayBinding="{Binding Caption}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+    </Grid>
+</ContentPage>

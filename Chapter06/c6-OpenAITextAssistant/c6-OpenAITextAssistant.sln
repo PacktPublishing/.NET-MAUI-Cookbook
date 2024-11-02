@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c6-OpenAITextAssistant", "c6-OpenAITextAssistant\c6-OpenAITextAssistant.csproj", "{A92AA245-19A1-4358-B952-C550EB0B0938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A92AA245-19A1-4358-B952-C550EB0B0938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92AA245-19A1-4358-B952-C550EB0B0938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92AA245-19A1-4358-B952-C550EB0B0938}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A92AA245-19A1-4358-B952-C550EB0B0938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92AA245-19A1-4358-B952-C550EB0B0938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92AA245-19A1-4358-B952-C550EB0B0938}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43CA35EB-1D76-4437-A240-BEF4A81B89D7}
+	EndGlobalSection
+EndGlobal

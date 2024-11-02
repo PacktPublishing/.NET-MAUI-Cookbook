@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TypicalMemoryLeaks.Pages.DelegateLeakPage"
+             Title="DelegateLeakPage">
+    <Grid>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="Dispatcher.StartTimer causes a memory leak here"/>
+            <Label x:Name="timerValueLabel" HorizontalOptions="Center" FontSize="30"/>
+        </VerticalStackLayout>
+        
+    </Grid>
+</ContentPage>

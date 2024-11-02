@@ -1,0 +1,6 @@
+@c6_SignalRServer_HostAddress = http://localhost:5171
+
+GET {{c6_SignalRServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

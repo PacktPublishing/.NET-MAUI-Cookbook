@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             xmlns:local="clr-namespace:c3_LottieAnimations"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c3_LottieAnimations.MainPage"
+             x:DataType="{x:Type local:MyViewModel}">
+    <ContentPage.BindingContext>
+        <local:MyViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <toolkit:InvertedBoolConverter x:Key="invertedBoolConverter"/>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="*,50">
+        <Label Text="{Binding StatusMessage}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="30"
+            IsVisible="{Binding HamsterRunCommand.IsRunning, Converter={StaticResource invertedBoolConverter}}"/>
+        <skia:SKLottieView RepeatCount="-1" 
+                IsVisible="{Binding HamsterRunCommand.IsRunning}"
+                Source="running_hamster.json"/>
+        <Button Text="Run"
+            Command="{Binding HamsterRunCommand}"
+            Grid.Row="1"/>
+    </Grid>
+</ContentPage>
