@@ -73,7 +73,7 @@ app.MapPost("/registerUser", async (
 {
     return await userManager.CreateUserWithRoleAsync(roleManager, email, password, new DateOnly(2000, 1, 1), "User");
 });
-app.MapDelete("/users/{email}", async (
+app.MapDelete("/users/delete/{email}", async (
     string email,
     [FromServices] UserManager<User> userManager,
     [FromServices] IAuthorizationService authorizationService,

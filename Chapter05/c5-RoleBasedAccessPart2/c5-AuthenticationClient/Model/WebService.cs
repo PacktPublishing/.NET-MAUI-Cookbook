@@ -55,7 +55,7 @@ namespace c5_AuthenticationClient
         }
         public async Task DeleteUserAsync(string email)
         {
-            var response = await httpClient.DeleteAsync($"users/{email}");
+            var response = await httpClient.DeleteAsync($"users/delete/{email}");
             response.EnsureSuccessStatusCode();
         }
         public async Task<User> GetCurrentUserAsync()

@@ -67,7 +67,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.MapIdentityApi<User>();
 
-app.MapDelete("/users/{email}", async (
+app.MapDelete("/users/delete/{email}", async (
     string email,
     UserManager<User> userManager,
     HttpContext httpContext) =>
