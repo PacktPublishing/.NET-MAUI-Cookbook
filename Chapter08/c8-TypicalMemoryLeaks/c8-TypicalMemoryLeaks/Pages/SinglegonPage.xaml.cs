@@ -1,8 +1,8 @@
 namespace TypicalMemoryLeaks.Pages;
 
-public partial class SinglegonPage : ContentPage
+public partial class SingletonPage : ContentPage
 {
-	public SinglegonPage()
+	public SingletonPage()
 	{
 		InitializeComponent();
         //For reference counting only

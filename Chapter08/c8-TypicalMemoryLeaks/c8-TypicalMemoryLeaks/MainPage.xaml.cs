@@ -20,7 +20,7 @@ namespace TypicalMemoryLeaks {
             await Shell.Current.GoToAsync(nameof(ControlLeakPage));
         }
         private async void GoToSingletonPageClick(object sender, EventArgs e) {
-            await Shell.Current.GoToAsync(nameof(SinglegonPage));
+            await Shell.Current.GoToAsync(nameof(SingletonPage));
         }
 
         private void GetSummaryClick(object sender, EventArgs e) {

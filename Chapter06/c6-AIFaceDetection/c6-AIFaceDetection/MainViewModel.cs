@@ -112,8 +112,8 @@ namespace c6_AIFaceDetection
                                 inputColumnName: "input",
                                 resizing: ResizingKind.Fill))
                             .Append(mlContext.Transforms.ExtractPixels(outputColumnName: "input"))
-                            .Append(mlContext.Transforms.CustomMapping<NoralizationData, NoralizationData>(
-                                NoralizationData.MeanAndScaleNormalization,
+                            .Append(mlContext.Transforms.CustomMapping<NormalizationData, NormalizationData>(
+                                NormalizationData.MeanAndScaleNormalization,
                                 contractName: null))
                             .Append(mlContext.Transforms.ApplyOnnxModel(
                                 modelFile: modelLocation,

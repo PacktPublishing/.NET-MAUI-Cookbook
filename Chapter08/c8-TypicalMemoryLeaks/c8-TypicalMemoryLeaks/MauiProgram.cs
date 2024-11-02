@@ -21,10 +21,10 @@ namespace TypicalMemoryLeaks
         }
         public static MauiAppBuilder RegisterViews(this MauiAppBuilder mauiAppBuilder)
         {
-            mauiAppBuilder.Services.AddSingleton<SinglegonPage>();
+            mauiAppBuilder.Services.AddSingleton<SingletonPage>();
 
             //Step 6
-            //mauiAppBuilder.Services.AddTransient<SinglegonPage>();
+            //mauiAppBuilder.Services.AddTransient<SingletonPage>();
             return mauiAppBuilder;
         }
     }

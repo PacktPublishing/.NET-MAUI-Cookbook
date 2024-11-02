@@ -2,13 +2,13 @@
 
 namespace c6_AIFaceDetection
 {
-    public class NoralizationData
+    public class NormalizationData
     {
         [ColumnName("input")]
         [VectorType(3, 240, 320)]
         public VBuffer<float> Reshape;
 
-        public static void MeanAndScaleNormalization(NoralizationData input, NoralizationData output)
+        public static void MeanAndScaleNormalization(NormalizationData input, NormalizationData output)
         {
             output.Reshape = new VBuffer<float>(
                 input.Reshape.Length,
