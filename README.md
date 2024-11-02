@@ -71,7 +71,7 @@ Additionally, it's recommended to move the downloaded folder closer to the root 
     * [Using images with an optimal size](/Chapter08/c8-OptimizedImages)
     * [Using compiled bindings](/Chapter08/c8-CompiledBindings)
     * [Loading data in asynchronous methods](/Chapter08/c8-AsyncLoading)
-    * [Profiling the application](/Chapter08/)
+    * [Profiling the application](/Chapter08/c8-PerformanceProfiling)
     * [Detecting memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
     * [Getting rid of memory leaks](/Chapter08/c8-TypicalMemoryLeaks)
 
