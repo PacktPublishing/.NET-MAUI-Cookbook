@@ -1,7 +1,7 @@
 # Signing in with a Google account
 This example is part of a recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
 
-[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
+[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
 
 **In the book, this recipe covers:**
 * Setting up an account in the Google Developer Console.

@@ -1,7 +1,7 @@
 # Implementing a custom arranging algorithm
 This example compliments a corresponding recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
 
-[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-authentication-interactivity/dp/1835461123)
+[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
 
 **The recipe in the book covers the following topics:**
 * Creating a custom panel that arranges its children in a circle.
