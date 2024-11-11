@@ -4,34 +4,34 @@
              x:Class="c1_HorizontalAndVerticalLayouts.MainPage">
     <!--Step 1-->
     <HorizontalStackLayout Spacing="50">
-        <Button Text="Button 1"/>
-        <Button Text="Button 2"/>
-        <Button Text="Button 3"/>
-        <Button Text="Button 4"/>
+        <Button Text="B 1"/>
+        <Button Text="B 2"/>
+        <Button Text="B 3"/>
+        <Button Text="B 4"/>
     </HorizontalStackLayout>
         
     <!--Step 2-->
     <!--<VerticalStackLayout Spacing="50">
-        <Button Text="Button 1"/>
-        <Button Text="Button 2"/>
-        <Button Text="Button 3"/>
-        <Button Text="Button 4"/>
+        <Button Text="B 1"/>
+        <Button Text="B 2"/>
+        <Button Text="B 3"/>
+        <Button Text="B 4"/>
     </VerticalStackLayout>-->
 
     <!--Step 3-->
     <!--<Grid RowDefinitions="*,*,*,*" RowSpacing="50">
-        <Button Text="Button 1"/>
-        <Button Text="Button 2" Grid.Row="1"/>
-        <Button Text="Button 3" Grid.Row="2"/>
-        <Button Text="Button 4" Grid.Row="3"/>
+        <Button Text="B 1"/>
+        <Button Text="B 2" Grid.Row="1"/>
+        <Button Text="B 3" Grid.Row="2"/>
+        <Button Text="B 4" Grid.Row="3"/>
     </Grid>-->
 
     <!--Step 4-->
     <!--<FlexLayout Wrap="Wrap">
-        <Button Text="Button 1" Margin="25"/>
-        <Button Text="Button 2" Margin="25"/>
-        <Button Text="Button 3" Margin="25"/>
-        <Button Text="Button 4" Margin="25"/>
-        <Button Text="Button 5" Margin="25"/>
+        <Button Text="B 1" Margin="25"/>
+        <Button Text="B 2" Margin="25"/>
+        <Button Text="B 3" Margin="25"/>
+        <Button Text="B 4" Margin="25"/>
+        <Button Text="B 5" Margin="25"/>
     </FlexLayout>-->
 </ContentPage>
