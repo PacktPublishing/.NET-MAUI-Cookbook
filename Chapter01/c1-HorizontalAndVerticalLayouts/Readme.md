@@ -11,4 +11,4 @@ This example compliments a corresponding recipe from the book published by [Pack
 **Note:** This example may not include all the points mentioned above. For complete details, please refer to the corresponding recipe in the book.
 
 ## Output
-![Linear layouts](/Images/Linear%20layouts.png)
+![Linear layouts](/Images/Linear%20Layouts.png)
