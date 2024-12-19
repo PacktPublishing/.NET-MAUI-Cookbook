@@ -1,7 +1,7 @@
 # Synchronizing data between offline and online databases
 This example is part of a recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
 
-[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
+[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.packtpub.com/en-IT/product/net-maui-cookbook-9781835464625)
 
 **In the book, this recipe covers:**
 - Configuring an ASP.NET Core server with data synchronization support using the [Datasync](https://github.com/CommunityToolkit/Datasync) library.

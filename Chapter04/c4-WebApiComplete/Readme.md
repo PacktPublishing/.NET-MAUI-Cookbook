@@ -1,7 +1,7 @@
 # Connecting to a remote web API service
 This example is part of a recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
 
-[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
+[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.packtpub.com/en-IT/product/net-maui-cookbook-9781835464625)
 
 **In the book, this recipe covers:**
 * The basics of connecting to a Web API service from a .NET MAUI app.
