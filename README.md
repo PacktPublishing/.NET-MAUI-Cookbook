@@ -57,7 +57,7 @@ Additionally, it's recommended to move the downloaded folder closer to the root 
     * [Building a chat bot with Ollama deployed to a self-hosted server](/Chapter06/c6-DeployedAiAssistant)
     * [Detecting a face on an image with a local ONNX model deployed to the device](/Chapter06/c6-AIFaceDetection)
     * [Sending real-time updates from the server using SignalR](/Chapter06/c6-SignalRConnection)
-    * [Uploading big files in chunks to a server](/Chapter06/c6-FileUploading)
+    * [Uploading large files in chunks to a server](/Chapter06/c6-FileUploading)
     * [Sending local push notifications](/Chapter06/c6-LocalNotifications)
     * [Synchronizing data between the offline and online databases](/Chapter06/c6-OfflineDataSync)
 7. **Understanding Platform-Specific APIs and Custom Handlers**
