@@ -19,6 +19,7 @@ This example is part of a recipe from the book published by [Packt](https://www.
 1. Configure your account in the Google Developer Console to obtain your Google Client ID and Client Secret. The detailed process is outlined in the recipe in this book.
 2. In the _c5-AuthenticationService_ project, replace "**YOUR GOOGLE CLIENT ID**" and "**YOUR GOOGLE CLIENT SECRET**" with the corresponding values from the Google Developer Console.
 3. Activate a Dev Tunnel, then start the server and client projects as described in [Building a client application connected to the authentication service](/Chapter05/c5-AuthenticationServiceAndClient#running-the-example).
+4. Replace the [WebService.baseAddress](https://github.com/PacktPublishing/.NET-MAUI-Cookbook/blob/4dd8225bd3a7dcfbb89b8d4512e50743e252b4a9/Chapter05/c5-GoogleAuth/c5-AuthenticationClient/Model/WebService.cs#L16) field value with your actual Dev Tunnel address.
 
 ## Output
 ![Google Sign In](/Images/Google%20Sign%20In.png)
