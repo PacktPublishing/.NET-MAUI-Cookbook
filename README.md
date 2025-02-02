@@ -3,6 +3,9 @@ This repository contains examples for the book published by [Packt](https://www.
 
 [.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
 
+> [!Note]
+> This repository has been updated to .NET 9 and may have some minor differences from the code in the book.
+
 ## Before You Begin
 Make sure your .NET MAUI environment is set up according to the official guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Some examples also include an ASP.NET Core service, so ensure you have the necessary workloads installed: [ASP.NET Core Prerequisites](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio#prerequisites).
 
