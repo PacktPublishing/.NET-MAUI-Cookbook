@@ -3,25 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:c5_AuthenticationClient"
              xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="c5_AuthenticationClient.MainPage">
+             x:Class="c5_AuthenticationClient.MainPage"
+             x:Name="page">
     <ContentPage.Behaviors>
-        <tk:EventToCommandBehavior 
-    EventName="Appearing" 
-    Command="{Binding SessionLogInCommand}"/>
+        <tk:EventToCommandBehavior EventName="Appearing" 
+                                   Command="{Binding SessionLogInCommand}"
+                                   BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     <ContentPage.BindingContext>
         <local:MainViewModel/>
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10">
         <Entry Placeholder="Email"
-            Text="{Binding Email}"/>
+               Text="{Binding Email}"/>
         <Entry Placeholder="Password"
-            Text="{Binding Password}"
+               Text="{Binding Password}"
                IsPassword="True"/>
         <Button Text="Log In" 
-            Command="{Binding LogInCommand}"/>
+                Command="{Binding LogInCommand}"/>
         <Button Text="Sign in with Google"
-            Command="{Binding GoogleSignInCommand}"/>
+                Command="{Binding GoogleSignInCommand}"/>
     </VerticalStackLayout>
 
 </ContentPage>

@@ -16,10 +16,10 @@ namespace c6_AIFaceDetection
         string sourceImagePath;
 
         [ObservableProperty]
-        ImageSource? sourceImage;
+        ImageSource sourceImage;
 
         [ObservableProperty]
-        ImageSource? faceImage;
+        ImageSource faceImage;
 
         [RelayCommand]
         async Task InitializeAsync()

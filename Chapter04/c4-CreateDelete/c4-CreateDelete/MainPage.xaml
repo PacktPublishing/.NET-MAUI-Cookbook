@@ -4,14 +4,16 @@
              xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
              xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="c4_LocalDatabaseConnection.MainPage">
+             x:Class="c4_LocalDatabaseConnection.MainPage"
+             x:Name="page">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
             EventName="Appearing"
-            Command="{Binding ShowingCommand}"/>
+            Command="{Binding ShowingCommand}"
+            BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     <ContentPage.Resources>
         <DataTemplate x:Key="customerTemplate" x:DataType="local:Customer">
@@ -38,7 +40,7 @@
     </ContentPage.Resources>
     <Grid>
         <RefreshView IsRefreshing="{Binding Refreshing}"
-             Command="{Binding LoadCustomersCommand}">
+                     Command="{Binding LoadCustomersCommand}">
             <CollectionView ItemsSource="{Binding Customers}" 
                             ItemTemplate="{StaticResource customerTemplate}"/>
         </RefreshView>

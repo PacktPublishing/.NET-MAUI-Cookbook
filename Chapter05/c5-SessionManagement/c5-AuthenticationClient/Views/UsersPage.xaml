@@ -4,18 +4,19 @@
              x:Class="c5_AuthenticationClient.Views.UsersPage"
              xmlns:vm="clr-namespace:c5_AuthenticationClient.ViewModels"
              xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Title="{Binding LoggedInUser.Email, StringFormat='Hi, {0}'}">
+             Title="{Binding LoggedInUser.Email, StringFormat='Hi, {0}'}"
+             x:Name="page">
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" />
     </Shell.BackButtonBehavior>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Log Out"
-                    Command="{Binding LogOutCommand}"/>
+                     Command="{Binding LogOutCommand}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Behaviors>
-        <tk:EventToCommandBehavior 
-            EventName="Appearing" 
-            Command="{Binding InitializeCommand}"/>
+        <tk:EventToCommandBehavior EventName="Appearing" 
+                                   Command="{Binding InitializeCommand}"
+                                   BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     <ContentPage.BindingContext>
         <vm:UsersViewModel/>

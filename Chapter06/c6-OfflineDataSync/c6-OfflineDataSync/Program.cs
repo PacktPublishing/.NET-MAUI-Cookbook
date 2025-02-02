@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = @"Server=(localdb)\mssqllocaldb;Database=MyDatabase3321;Trusted_Connection=True;MultipleActiveResultSets=true";
+var connectionString = @"Server=(localdb)\mssqllocaldb;Database=MyDatabase76;Trusted_Connection=True;MultipleActiveResultSets=true";
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddDatasyncServices();
 builder.Services.AddControllers();

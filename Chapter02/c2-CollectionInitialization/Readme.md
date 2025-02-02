@@ -1,7 +1,7 @@
 # Initializing bound collections without freezing the UI
 This example compliments a corresponding recipe from the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github):
 
-[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.packtpub.com/en-IT/product/net-maui-cookbook-9781835464625)
+[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
 
 **The recipe in the book covers the following topics:**
 * How to asynchronously load data when a view is displayed using `EventToCommandBehavior` and an async command.

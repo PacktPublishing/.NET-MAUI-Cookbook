@@ -1,7 +1,7 @@
 # NET MAUI Cookbook Examples
 This repository contains examples for the book published by [Packt](https://www.packtpub.com/en-us?utm_source=github): 
 
-[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.packtpub.com/en-IT/product/net-maui-cookbook-9781835464625)
+[.NET MAUI Cookbook: Build a full-featured app swiftly with MVVM, CRUD, AI, authentication, real-time updates, and more](https://www.amazon.com/NET-MAUI-Cookbook-full-featured-authentication-ebook/dp/B0DHV34WQ5)
 
 ## Before You Begin
 Make sure your .NET MAUI environment is set up according to the official guide: [.NET MAUI Installation](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=vswin). Some examples also include an ASP.NET Core service, so ensure you have the necessary workloads installed: [ASP.NET Core Prerequisites](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio#prerequisites).

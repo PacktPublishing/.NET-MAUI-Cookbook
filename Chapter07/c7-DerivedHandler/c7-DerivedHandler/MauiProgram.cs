@@ -9,7 +9,7 @@ namespace c7_DerivedHandler
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                //.UseCustomEntry()
+                .UseCustomEntry()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

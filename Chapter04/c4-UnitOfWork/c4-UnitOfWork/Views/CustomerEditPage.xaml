@@ -13,12 +13,13 @@
                    Text="{Binding Item.FirstName}"/>
             <Entry Placeholder="Last Name" 
                    Text="{Binding Item.LastName}"/>
-            <Entry Placeholder="Email" Text="{Binding Item.Email}" 
+            <Entry Placeholder="Email" 
+                   Text="{Binding Item.Email}" 
                    ReturnCommand="{Binding SaveCommand}"/>
             <Button Text="Save" Command="{Binding SaveCommand}"/>
         </VerticalStackLayout>
         <ActivityIndicator VerticalOptions="Center"
-                HorizontalOptions="Center"
-                IsRunning="{Binding SaveCommand.IsRunning}"/>
+                           HorizontalOptions="Center"
+                           IsRunning="{Binding SaveCommand.IsRunning}"/>
     </Grid>
 </ContentPage>

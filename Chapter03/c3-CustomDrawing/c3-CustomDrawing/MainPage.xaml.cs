@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Maui.Behaviors;
 using CommunityToolkit.Maui.Core.Platform;
 using CommunityToolkit.Mvvm.ComponentModel;
-using Kotlin.Properties;
 using Microsoft.Maui.Graphics;
 
 namespace c3_DarkAndLightThemes {

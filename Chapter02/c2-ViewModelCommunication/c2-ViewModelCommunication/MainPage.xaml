@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="c2_ViewModelCommunication.MainPage"
              xmlns:views="clr-namespace:c2_ViewModelCommunication.Views">
-    <Grid RowDefinitions="40, *" ColumnDefinitions="*,*">
+    <Grid RowDefinitions="60, *" ColumnDefinitions="*,*">
         <views:AlertGeneratorView Grid.ColumnSpan="2"/>
         <views:PerformanceMonitorView Grid.Row="1"/>
         <views:SecurityMonitorView Grid.Row="1" Grid.Column="1"/>

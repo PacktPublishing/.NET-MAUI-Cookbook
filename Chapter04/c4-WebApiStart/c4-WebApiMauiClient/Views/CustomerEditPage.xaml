@@ -5,13 +5,17 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="c4_LocalDatabaseConnection.Views.CustomerEditPage"
              xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
-             Title="Edit Customer">
+             Title="New Customer"
+             x:Name="editPage">
     <ContentPage.BindingContext>
         <vm:CustomerEditViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <Style TargetType="Entry" x:Key="invalidEntryStyle">
             <Setter Property="TextColor" Value="Red"/>
+        </Style>
+        <Style TargetType="Entry" x:Key="validEntryStyle">
+
         </Style>
     </ContentPage.Resources>
     <Grid>
@@ -20,9 +24,11 @@
                    Text="{Binding Item.FirstName}">
                 <Entry.Behaviors>
                     <toolkit:TextValidationBehavior InvalidStyle="{StaticResource invalidEntryStyle}"
-                                     IsValid="{Binding IsFirstNameValid}"
-                                     Flags="ValidateOnValueChanged,ValidateOnAttaching"
-                                     MinimumLength="1">
+                                                    ValidStyle="{StaticResource validEntryStyle}"
+                                                    IsValid="{Binding IsFirstNameValid}"
+                                                    Flags="ValidateOnValueChanged,ValidateOnAttaching"
+                                                    MinimumLength="1"
+                                                    BindingContext="{Binding Source={x:Reference editPage}, Path=BindingContext}">
                     </toolkit:TextValidationBehavior>
 
                 </Entry.Behaviors>
@@ -33,8 +39,10 @@
                    ReturnCommand="{Binding SaveCommand}">
                 <Entry.Behaviors>
                     <toolkit:EmailValidationBehavior InvalidStyle="{StaticResource invalidEntryStyle}"
+                                                     ValidStyle="{StaticResource validEntryStyle}"
                                                      IsValid="{Binding IsEmailValid}"
-                                                     Flags="ValidateOnValueChanged,ValidateOnAttaching">
+                                                     Flags="ValidateOnValueChanged,ValidateOnAttaching"
+                                                     BindingContext="{Binding Source={x:Reference editPage}, Path=BindingContext}">
                     </toolkit:EmailValidationBehavior>
                 </Entry.Behaviors>
             </Entry>

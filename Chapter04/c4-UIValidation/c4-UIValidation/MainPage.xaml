@@ -4,14 +4,16 @@
              xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
-             x:Class="c4_LocalDatabaseConnection.MainPage">
+             x:Class="c4_LocalDatabaseConnection.MainPage"
+             x:Name="page">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
             EventName="Appearing"
-            Command="{Binding ShowingCommand}"/>
+            Command="{Binding ShowingCommand}"
+            BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     <ContentPage.Resources>
         <DataTemplate x:Key="customerTemplate" x:DataType="local:Customer">
@@ -26,17 +28,16 @@
                                   ColumnDefinitions="*,*"
                                   Padding="10">
                     <Grid.GestureRecognizers>
-                        <TapGestureRecognizer
-                                        Command="{Binding Path=BindingContext.ShowDetailFormCommand, Source={RelativeSource Mode=FindAncestor, AncestorType={x:Type CollectionView}}}"
-                                            CommandParameter="{Binding}"/>
+                        <TapGestureRecognizer Command="{Binding Path=BindingContext.ShowDetailFormCommand, Source={RelativeSource Mode=FindAncestor, AncestorType={x:Type CollectionView}}}"
+                                              CommandParameter="{Binding}"/>
                     </Grid.GestureRecognizers>
                     <Label Text="{Binding FirstName}"/>
                     <Label Text="{Binding LastName}" 
-                                       Grid.Column="1"/>
+                           Grid.Column="1"/>
                     <Label Text="{Binding Email}"
-                                       TextColor="DarkGray"
-                                       Grid.Row="1" 
-                                       Grid.ColumnSpan="2"/>
+                           TextColor="DarkGray"
+                           Grid.Row="1" 
+                           Grid.ColumnSpan="2"/>
                 </Grid>
             </SwipeView>
         </DataTemplate>

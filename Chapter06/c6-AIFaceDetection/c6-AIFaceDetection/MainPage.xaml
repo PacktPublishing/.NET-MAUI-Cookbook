@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:c6_AIFaceDetection"
              xmlns:tk="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="c6_AIFaceDetection.MainPage">
+             x:Class="c6_AIFaceDetection.MainPage"
+             x:Name="page">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Behaviors>
         <tk:EventToCommandBehavior
             EventName="Appearing"
-            Command="{Binding InitializeCommand}"/>
+            Command="{Binding InitializeCommand}"
+            BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     <Grid RowDefinitions="*,50, 300" 
           RowSpacing="20"

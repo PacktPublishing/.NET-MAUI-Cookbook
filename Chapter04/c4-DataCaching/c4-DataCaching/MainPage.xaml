@@ -2,16 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:c4_LocalDatabaseConnection.ViewModels"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:c4_LocalDatabaseConnection"
-             x:Class="c4_LocalDatabaseConnection.MainPage">
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="c4_LocalDatabaseConnection.MainPage"
+             x:Name="page">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
             EventName="Appearing"
-            Command="{Binding ShowingCommand}"/>
+            Command="{Binding ShowingCommand}"
+            BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     <ContentPage.Resources>
         <DataTemplate x:Key="customerTemplate" x:DataType="local:Customer">
@@ -27,8 +29,8 @@
                                   Padding="10">
                     <Grid.GestureRecognizers>
                         <TapGestureRecognizer
-                                        Command="{Binding Path=BindingContext.ShowDetailFormCommand, Source={RelativeSource Mode=FindAncestor, AncestorType={x:Type CollectionView}}}"
-                                            CommandParameter="{Binding}"/>
+                                        Command="{Binding Path=BindingContext.ShowDetailFormCommand, Source={x:Reference page}}"
+                                        CommandParameter="{Binding}"/>
                     </Grid.GestureRecognizers>
                     <Label Text="{Binding FirstName}"/>
                     <Label Text="{Binding LastName}" 

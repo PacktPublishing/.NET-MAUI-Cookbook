@@ -9,14 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace c2_DecoupleViewAndViewModel {
-    public partial class MainViewModel : ObservableObject {
+namespace c2_DecoupleViewAndViewModel
+{
+    public partial class MainViewModel : ObservableObject
+    {
         [RelayCommand(IncludeCancelCommand = true)]
-        public async Task UpdateTextAsync(CancellationToken token) {
-            try {
+        public async Task UpdateTextAsync(CancellationToken token)
+        {
+            try
+            {
                 await Task.Delay(5000, token);
             }
-            catch (OperationCanceledException) {
+            catch (OperationCanceledException)
+            {
                 return;
             }
             //other logic
