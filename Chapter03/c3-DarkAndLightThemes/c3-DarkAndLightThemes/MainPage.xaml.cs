@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using static Android.Content.Res.Resources;
 
 namespace c3_DarkAndLightThemes {
     public partial class MainPage : ContentPage {

@@ -9,7 +9,10 @@ namespace c4_LocalDatabaseConnection {
             context.Database.EnsureCreated();
 
             InitializeComponent();
-            MainPage = new AppShell();
+        }
+        protected override Window CreateWindow(IActivationState activationState)
+        {
+            return new Window(new AppShell());
         }
     }
 }

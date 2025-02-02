@@ -16,7 +16,7 @@ namespace c6_OfflineDataSyncClient.Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "local2.db");
+            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "local.db");
             optionsBuilder.UseSqlite($"Filename={dbPath}");
             base.OnConfiguring(optionsBuilder);
         }

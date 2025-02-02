@@ -12,13 +12,14 @@ namespace c6_AiAssistantClient
             Timeout = TimeSpan.FromSeconds(30)
         };
 
+        [NotifyCanExecuteChangedFor(nameof(SendMessageCommand))]
         [ObservableProperty]
         string? message;
 
         [ObservableProperty]
         string? answer;
 
-        [RelayCommand]
+        [RelayCommand (CanExecute = nameof(CanSendMessage))]
         async Task SendMessageAsync()
         {
             var response = await httpClient.GetAsync($"ask-question?question='{Uri.EscapeDataString(Message)}'");

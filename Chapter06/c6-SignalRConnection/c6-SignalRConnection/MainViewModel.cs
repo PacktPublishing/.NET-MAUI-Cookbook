@@ -22,7 +22,7 @@ namespace c6_SignalRConnection
         async Task Initialize()
         {
             hubConnection = new HubConnectionBuilder()
-                .WithUrl("[Your Dev Tunnel Address]/auction")
+                .WithUrl("https://wv356j4t-7223.euw.devtunnels.ms/auction")
                 .Build();
             hubConnection.On<BidData>("BidReceived", bid =>
             {

@@ -8,14 +8,13 @@
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10">
         <Entry Placeholder="Email"
-        Text="{Binding Email}"/>
+               Text="{Binding Email}"/>
         <Entry Placeholder="Password"
-        Text="{Binding Password}"
-            IsPassword="True"/>
+               Text="{Binding Password}"
+               IsPassword="True"/>
         <Button Text="Log In" 
-        Command="{Binding LogInCommand}"/>
+                Command="{Binding LogInCommand}"/>
         <Button Text="Sign in with Google"
-    Command="{Binding GoogleSignInCommand}"/>
+                Command="{Binding GoogleSignInCommand}"/>
     </VerticalStackLayout>
-
 </ContentPage>

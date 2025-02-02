@@ -2,7 +2,8 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="c2_ViewModelCommunication.Views.AlertGeneratorView"
-             xmlns:vm="clr-namespace:c2_ViewModelCommunication.ViewModels">
+             xmlns:vm="clr-namespace:c2_ViewModelCommunication.ViewModels"
+             x:DataType="{x:Type vm:AlertGeneratorViewModel}">
     <ContentView.BindingContext>
         <vm:AlertGeneratorViewModel/>
     </ContentView.BindingContext>
